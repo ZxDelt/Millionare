@@ -12,14 +12,14 @@ import { SCHEMA } from "./schema";
 const g = globalThis as unknown as { __jjDb?: Client; __jjSchema?: Promise<void> };
 
 function makeClient(): Client {
-  const url = process.env.TURSO_DATABASE_URL ?? "file:./data/joule.db";
+  const url = process.env.TURSO_DATABASE_URL || process.env.TURSO_URL || "file:./data/joule.db";
   if (url.startsWith("file:")) {
     if (process.env.VERCEL) {
       throw new Error("TURSO_DATABASE_URL points to a local file; Vercel has no persistent disk. Use a Turso URL.");
     }
     mkdirSync(dirname(resolve(url.slice("file:".length))), { recursive: true });
   }
-  return createClient({ url, authToken: process.env.TURSO_AUTH_TOKEN || undefined });
+  return createClient({ url, authToken: process.env.TURSO_AUTH_TOKEN || process.env.TURSO_TOKEN || undefined });
 }
 
 export async function getDb(): Promise<Client> {

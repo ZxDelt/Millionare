@@ -10,9 +10,9 @@ import { DEFAULT_SETTINGS } from "../src/lib/defaults";
 import { SAMPLE_QUESTIONS } from "./sample-questions";
 
 async function main() {
-  const url = process.env.TURSO_DATABASE_URL ?? "file:./data/joule.db";
+  const url = process.env.TURSO_DATABASE_URL || process.env.TURSO_URL || "file:./data/joule.db";
   if (url.startsWith("file:")) mkdirSync(dirname(resolve(url.slice(5))), { recursive: true });
-  const db = createClient({ url, authToken: process.env.TURSO_AUTH_TOKEN || undefined });
+  const db = createClient({ url, authToken: process.env.TURSO_AUTH_TOKEN || process.env.TURSO_TOKEN || undefined });
 
   await db.batch(SCHEMA, "write");
 
