@@ -66,6 +66,13 @@ function mood(m: Mood) { setView({ mood: m }); }
 function crowd(c: Crowd) { setView({ crowd: c, crowdAt: performance.now() }); }
 function plate(i: number, p: Plate) { setView((s) => ({ plates: s.plates.map((x, j) => (j === i ? p : x)) })); }
 function sfx(c: Cue) { audio.play(c); }
+function playerSay(text: string) { setView((s) => ({ player: { text, visible: true, key: s.player.key + 1 } })); }
+function playerHide() { setView((s) => ({ player: { ...s.player, visible: false } })); }
+const LIFELINE_ASK: Record<LifelineId, string> = {
+  double: "I'd like to use Double Chance.",
+  phone: "Can I phone a friend, please?",
+  askAi: "Let me ask the AI.",
+};
 
 function vars(extra: Record<string, string | number> = {}): Record<string, string | number> {
   const s = get().server;
@@ -200,7 +207,7 @@ async function presentQuestion(first: boolean) {
   if (s.level === s.walkAwayFromLevel) await line("walkAwayUnlocked");
   await line(first ? "firstQuestion" : s.level >= 11 ? "bigQuestion" : "askQuestion");
 
-  setView({ questionVisible: true });
+  setView({ questionVisible: true, hostReading: true });
   const reveal = (async () => {
     for (let i = 1; i <= 4; i++) {
       await sleep(get().voice ? 900 : 550);
@@ -209,7 +216,8 @@ async function presentQuestion(first: boolean) {
   })();
   if (get().voice) await say(speech, { bubble: false });
   await reveal;
-  setView({ host: { ...get().host, visible: false } });
+  if (!get().voice) await sleep(600); // host finishes reading off the monitor
+  setView({ host: { ...get().host, visible: false }, hostReading: false });
 
   await act({ type: "begin" });
   startWatch();
@@ -222,6 +230,7 @@ function suspenseMs(level: number) {
 async function afterJudged(res: PublicState, index: number) {
   stopWatch();
   setView({ reconfirm: null });
+  playerHide();
   plate(index, "locked");
   mood("locked");
   sfx("lock");
@@ -378,7 +387,8 @@ export function select(index: number) {
   if (s.plates[index] === "eliminated") return;
   void withBusy(async () => {
     plate(index, "selected");
-    const res = await act({ type: "select", index }).catch((e) => { plate(index, "idle"); throw e; });
+    playerSay(`I'll go with ${LETTERS[index]}: ${s.server!.question!.options[index]}.`);
+    const res = await act({ type: "select", index }).catch((e) => { plate(index, "idle"); playerHide(); throw e; });
     if (res.phase === "reconfirm") {
       setView({ reconfirm: { index, endsAt: performance.now() + (res.reconfirmMs ?? 10_000), totalMs: res.reconfirmMs ?? 10_000 } });
       void line("reconfirm", { letter: LETTERS[index], option: res.question!.options[index] });
@@ -404,8 +414,10 @@ export function cancel(auto = false) {
   audio.stopVoice();
   void withBusy(async () => {
     setView({ reconfirm: null });
+    playerSay(auto ? "Hmm... not yet." : "Wait, let me think again.");
     plate(r.index, "idle");
     const res = await act({ type: "cancel" });
+    setTimeout(playerHide, 1400);
     void line(auto ? "reconfirmTimeout" : res.cancelsLeft === 0 ? "finalAnswer" : "cancelled");
   });
 }
@@ -414,7 +426,9 @@ export function takeLifeline(id: LifelineId) {
   const s = get();
   if (s.screen !== "play" || s.server?.phase !== "question" || !s.server.begun || !s.server.lifelines[id] || s.reconfirm) return;
   void withBusy(async () => {
-    const res = await act({ type: "lifeline", id });
+    playerSay(LIFELINE_ASK[id]);
+    await sleep(1100);
+    const res = await act({ type: "lifeline", id }).finally(playerHide);
     sfx("lifeline");
     if (id === "double") {
       await line("doubleChanceOn");
@@ -458,6 +472,9 @@ export function walkAway(yes: boolean) {
   setView({ walkConfirm: false });
   if (!yes) return;
   void withBusy(async () => {
+    playerSay("I'll take the coins and walk away.");
+    await sleep(1300);
+    playerHide();
     const res = await act({ type: "walkAway" });
     await finish(res, null);
   });

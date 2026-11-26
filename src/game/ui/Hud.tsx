@@ -1,19 +1,24 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { timerRemaining, useGame } from "../store";
+import { timerRemaining, useGame, type GameView } from "../store";
 import { askWalkAway, next, select, takeLifeline, toggleMute } from "../director";
 import { formatCoins } from "@/lib/speech";
 import type { LifelineId } from "@/lib/game-types";
 
 const LETTERS = ["A", "B", "C", "D"];
 
+/** The server already knows the verdict during the suspense beat; the HUD must not give it away. */
+const hidingResult = (g: GameView) => g.mood === "locked" || g.mood === "suspense";
+
 export default function Hud() {
   return (
     <div className="hud">
-      <Lifelines />
+      <div className="top-left">
+        <Lifelines />
+        <MuteButton />
+      </div>
       <Ladder />
       <BottomPanel />
-      <MuteButton />
     </div>
   );
 }
@@ -65,6 +70,7 @@ function Lifelines() {
 
 function Ladder() {
   const s = useGame((g) => g.server);
+  const hidden = useGame(hidingResult);
   if (!s) return null;
   const steps = s.ladder.map((st, i) => ({ ...st, level: i + 1 })).reverse();
   return (
@@ -73,14 +79,14 @@ function Ladder() {
         const cls = [
           "rung",
           st.level === s.level && s.phase !== "over" ? "current" : "",
-          st.level < s.level || (st.level === s.level && (s.phase === "revealed" || s.over?.reason === "win")) ? "won" : "",
+          st.level < s.level || (st.level === s.level && ((s.phase === "revealed" && !hidden) || s.over?.reason === "win")) ? "won" : "",
           st.level === s.walkAwayFromLevel ? "walk-mark" : "",
           st.level === 16 ? "jackpot" : "",
         ].join(" ");
         return (
           <li key={st.level} className={cls}>
             <span className="rung-n">{st.level}</span>
-            <span className="rung-c">◆ {formatCoins(st.coins)}</span>
+            <span className="rung-c">{formatCoins(st.coins)}</span>
           </li>
         );
       })}
@@ -98,7 +104,10 @@ function BottomPanel() {
   const explanation = useGame((g) => g.explanation);
   const busy = useGame((g) => g.busy);
   const screen = useGame((g) => g.screen);
+  const hidden = useGame(hidingResult);
   if (!s?.question) return null;
+  const showOver = !!s.over && !hidden;
+  const banked = hidden && (s.phase === "revealed" || s.phase === "over") ? (s.level > 1 ? s.ladder[s.level - 2].coins : 0) : s.bankedCoins;
   const q = s.question;
   const clickable = s.phase === "question" && s.begun && !busy;
 
@@ -106,7 +115,8 @@ function BottomPanel() {
     <div className={`bottom${qVisible ? " in" : ""}`}>
       <div className="bottom-top">
         <div className="coins-now">
-          <span className="muted">{s.over ? "Won" : "Banked"}</span> <b>◆ {formatCoins(s.over ? s.over.coins : s.bankedCoins)}</b>
+          <span className="muted">{showOver ? "Won" : "Banked"}</span>
+          <b>◆ {formatCoins(showOver ? s.over!.coins : banked)}</b>
         </div>
         <TimerRing />
         <div className="bottom-actions">
@@ -130,7 +140,7 @@ function BottomPanel() {
 
       <div className="q-banner" aria-live="polite">
         <span className="q-level">Q{s.level}</span>
-        {q.text}
+        <span className="q-text">{q.text}</span>
       </div>
       <div className="plates">
         {q.options.map((o, i) => {
@@ -144,7 +154,8 @@ function BottomPanel() {
               onClick={() => select(i)}
               aria-label={`${LETTERS[i]}: ${o}`}
             >
-              <span className="plate-l">{LETTERS[i]}:</span> <span className="plate-t">{o}</span>
+              <span className="plate-l">{LETTERS[i]}</span>
+              <span className="plate-t">{o}</span>
             </button>
           );
         })}

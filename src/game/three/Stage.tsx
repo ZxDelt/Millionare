@@ -9,6 +9,7 @@ import StageSet from "./StageSet";
 import Beams from "./Beams";
 import Audience from "./Audience";
 import Characters from "./Characters";
+import Desk from "./Desk";
 import Confetti from "./Confetti";
 import CameraRig from "./CameraRig";
 import { fx } from "./fx";
@@ -41,7 +42,7 @@ export default function Stage() {
       aria-hidden
     >
       <color attach="background" args={["#050719"]} />
-      <fog attach="fog" args={["#050719", 14, 34]} />
+      <fog attach="fog" args={["#050719", 16, 40]} />
       <PerformanceMonitor
         bounds={() => [54, 59]}
         flipflops={4}
@@ -55,6 +56,7 @@ export default function Stage() {
       <StageSet />
       <Beams />
       <Audience />
+      <Desk />
       <Characters />
       <Confetti />
       <CameraRig />

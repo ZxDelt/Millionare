@@ -5,7 +5,7 @@ import { useGame } from "../store";
 import { askWalkAway, cancel, confirm, next, resumeIfAny, select, takeLifeline, walkAway, endPhone } from "../director";
 import TitleScreen from "./TitleScreen";
 import Hud from "./Hud";
-import { HostBubble, OverScreen, PhoneOverlay, ReconfirmDialog, Toast, WalkConfirm, LoadingScreen, AudioUnlock } from "./Overlays";
+import { HostBubble, PlayerBubble, OverScreen, Toast, LoadingScreen, AudioUnlock } from "./Overlays";
 import DebugOverlay from "./DebugOverlay";
 
 // three.js is code-split: only the game page downloads it, and never on the server (GDD §14.3).
@@ -63,9 +63,7 @@ export default function GameApp() {
       {screen === "play" && (
         <>
           <HostBubble />
-          <ReconfirmDialog />
-          <PhoneOverlay />
-          <WalkConfirm />
+          <PlayerBubble />
         </>
       )}
       {screen === "over" && <OverScreen />}

@@ -23,6 +23,10 @@ export interface GameView {
   voice: boolean;
   host: { text: string; visible: boolean; key: number };
   talking: boolean;
+  /** Host is reading the question off the desk monitor (looks down at it). */
+  hostReading: boolean;
+  /** Contestant speech bubble (says the chosen answer, asks for a lifeline...). */
+  player: { text: string; visible: boolean; key: number };
   questionVisible: boolean;
   optionsShown: number;
   plates: Plate[];
@@ -50,6 +54,8 @@ export const initialView = (): GameView => ({
   voice: false,
   host: { text: "", visible: false, key: 0 },
   talking: false,
+  hostReading: false,
+  player: { text: "", visible: false, key: 0 },
   questionVisible: false,
   optionsShown: 0,
   plates: ["idle", "idle", "idle", "idle"],
@@ -81,5 +87,13 @@ export function timerRemaining(t: TimerView, now = performance.now()): number {
   return Math.max(0, t.running ? t.remainingMs - (now - t.at) : t.remainingMs);
 }
 
-/** Shared per-frame values read by the 3D scene without React re-renders. */
-export const frame = { mouth: 0 };
+export interface Anchor { x: number; y: number; scale: number; on: boolean }
+
+/** Shared per-frame values read without React re-renders. anchors = head positions in CSS px (speech bubbles). */
+export const frame = {
+  mouth: 0,
+  anchors: {
+    host: { x: 0, y: 0, scale: 0, on: false } as Anchor,
+    player: { x: 0, y: 0, scale: 0, on: false } as Anchor,
+  },
+};

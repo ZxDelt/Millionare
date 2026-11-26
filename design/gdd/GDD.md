@@ -401,3 +401,12 @@ None. Turso chosen (SQLite-compatible, so there's no dialect change between dev 
 ## 18. On Hold
 - **Tamil language:** waiting for someone to write the Tamil text (§9)
 - **Final ElevenLabs voice:** the picker is built; the choice is made later
+
+### 16.2 Studio + UI pass (v1.1)
+- Full-circle seating bowl (3 tiers, 8 aisles, step lights, LED riser strips); every audience sprite sits on an instanced chair.
+- Host and contestant sit in hot-seat chairs (chairs draw without depth write, sprites on top → no clipping).
+- Centre console with two desk monitors showing the live question and answer states; side jumbotrons show level and prize.
+- Gaze: characters look down at their monitor while reading and at the camera while speaking. Blinking, thinking pose.
+- Speech bubbles are anchored to each character's head. Lock-in, walk-away and phone prompts appear inside the host's bubble; the contestant says the chosen answer and lifeline requests.
+- HUD: question panel centred on screen; chamfered plates with real borders; banked coins and ladder hide the result until the reveal.
+- Extra detail: truss lamps, LED pylons, TV cameras with tally lights, drifting light dust.

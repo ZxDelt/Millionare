@@ -15,6 +15,6 @@ export const perf = {
 export const QUALITY = [
   { lines: 270, crowd: 80, beams: 4 },
   { lines: 300, crowd: 150, beams: 6 },
-  { lines: 360, crowd: 150, beams: 8 },
-  { lines: 360, crowd: 300, beams: 8 },
+  { lines: 360, crowd: 220, beams: 8 },
+  { lines: 360, crowd: 400, beams: 8 },
 ] as const;
