@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="JOULE JACKPOT — The Energy Quiz Show">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#2A0E5C"/>
+      <stop offset="1" stop-color="#0B1033"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF1A8"/>
+      <stop offset=".45" stop-color="#FFC83D"/>
+      <stop offset="1" stop-color="#FF7A1A"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE27A"/>
+      <stop offset="1" stop-color="#E08A00"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="420" rx="28" fill="url(#bg)"/>
+
+  <!-- hexagon ring -->
+  <g transform="translate(400 150)" filter="url(#glow)">
+    <polygon points="0,-120 104,-60 104,60 0,120 -104,60 -104,-60"
+             fill="none" stroke="#22E1FF" stroke-width="6"/>
+    <polygon points="0,-104 90,-52 90,52 0,104 -90,52 -90,-52"
+             fill="none" stroke="#22E1FF" stroke-width="2" opacity=".5"/>
+    <!-- coin -->
+    <circle r="72" fill="url(#coin)" stroke="#FFF1A8" stroke-width="4"/>
+    <circle r="58" fill="none" stroke="#B86A00" stroke-width="3" opacity=".7"/>
+    <!-- lightning bolt cutting through coin -->
+    <polygon points="14,-92 -40,8 -6,8 -20,92 42,-18 6,-18 26,-92"
+             fill="#22E1FF" stroke="#0B1033" stroke-width="5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="400" y="335" text-anchor="middle"
+        font-family="'Arial Black','Segoe UI Black',Impact,sans-serif" font-weight="900"
+        font-size="72" letter-spacing="4"
+        fill="url(#gold)" stroke="#0B1033" stroke-width="3" paint-order="stroke">JOULE JACKPOT</text>
+  <text x="400" y="380" text-anchor="middle"
+        font-family="'Segoe UI',Arial,sans-serif" font-weight="700"
+        font-size="22" letter-spacing="10" fill="#22E1FF">THE ENERGY QUIZ SHOW</text>
+</svg>

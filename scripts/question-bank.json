@@ -1,0 +1,2368 @@
+[
+  {
+    "text": "Which star is closest to Earth?",
+    "options": [
+      "The Sun",
+      "Proxima Centauri",
+      "Sirius",
+      "Polaris"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "origins",
+    "explanation": "The Sun is a star about 150 million km away. The next nearest star, Proxima Centauri, is more than 4 light-years away."
+  },
+  {
+    "text": "Plants capture the Sun's energy through which process?",
+    "options": [
+      "Photosynthesis",
+      "Respiration",
+      "Evaporation",
+      "Fermentation"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "origins",
+    "explanation": "Photosynthesis uses sunlight to turn carbon dioxide and water into sugars, storing the Sun's energy as chemical energy."
+  },
+  {
+    "text": "What do we call the light and heat energy given off by the Sun?",
+    "options": [
+      "Geothermal energy",
+      "Tidal energy",
+      "Static electricity",
+      "Solar radiation"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "origins",
+    "explanation": "Solar radiation is the energy the Sun emits, mostly as visible light, infrared (heat) and some ultraviolet."
+  },
+  {
+    "text": "Which gas makes up most of the Sun?",
+    "options": [
+      "Oxygen",
+      "Hydrogen",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "origins",
+    "explanation": "About three-quarters of the Sun's mass is hydrogen, with most of the rest being helium."
+  },
+  {
+    "text": "Roughly how long does sunlight take to reach Earth?",
+    "options": [
+      "About 8 seconds",
+      "About 8 hours",
+      "About 8 minutes",
+      "About 8 days"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "origins",
+    "explanation": "Light travels about 300,000 km per second, so it crosses the 150 million km to Earth in about 8 minutes 20 seconds."
+  },
+  {
+    "text": "What mainly causes Earth's winds?",
+    "options": [
+      "The Moon's gravity",
+      "Earth's magnetic field",
+      "Salt in the oceans",
+      "Uneven heating by the Sun"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "origins",
+    "explanation": "The Sun heats land, sea and air unevenly. Warm air rises and cooler air moves in to replace it, creating wind."
+  },
+  {
+    "text": "Which layer of gas around Earth traps some of the Sun's heat?",
+    "options": [
+      "The crust",
+      "The mantle",
+      "The atmosphere",
+      "The inner core"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "origins",
+    "explanation": "Greenhouse gases in the atmosphere absorb heat radiated by Earth's surface, keeping the planet much warmer than it would otherwise be."
+  },
+  {
+    "text": "Ocean tides are mainly caused by the gravity of…",
+    "options": [
+      "The Moon",
+      "Mars",
+      "Jupiter",
+      "Earth's core"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "origins",
+    "explanation": "The Moon's gravity pulls on Earth's oceans, creating bulges of water. The Sun adds a smaller effect."
+  },
+  {
+    "text": "Scientists estimate the Big Bang happened about how long ago?",
+    "options": [
+      "4.5 billion years",
+      "65 million years",
+      "100 billion years",
+      "13.8 billion years"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "origins",
+    "explanation": "The universe began about 13.8 billion years ago. Earth itself formed later, about 4.5 billion years ago."
+  },
+  {
+    "text": "A large share of the heat inside Earth comes from…",
+    "options": [
+      "Burning coal seams",
+      "Sunlight stored in rocks",
+      "Friction from the wind",
+      "Radioactive decay"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "origins",
+    "explanation": "Decay of uranium, thorium and potassium in rocks releases heat, adding to heat left over from Earth's formation."
+  },
+  {
+    "text": "What is the central region of the Sun where fusion happens?",
+    "options": [
+      "The corona",
+      "The photosphere",
+      "The chromosphere",
+      "The core"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "origins",
+    "explanation": "Fusion happens in the core, where temperature and pressure are highest. The corona is the Sun's thin outer atmosphere."
+  },
+  {
+    "text": "The energy stored in fossil fuels originally came from…",
+    "options": [
+      "The Sun",
+      "Earth's core",
+      "The Moon",
+      "Lightning strikes"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "origins",
+    "explanation": "Ancient plants and plankton captured sunlight by photosynthesis. Their buried remains became coal, oil and gas."
+  },
+  {
+    "text": "Which force squeezes the Sun's core hard enough for fusion?",
+    "options": [
+      "Gravity",
+      "Magnetism",
+      "Friction",
+      "Static electricity"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "origins",
+    "explanation": "The Sun's enormous mass pulls inward by gravity, creating the crushing pressure and heat needed to fuse hydrogen."
+  },
+  {
+    "text": "Which elements were mostly created in the Big Bang?",
+    "options": [
+      "Hydrogen and helium",
+      "Iron and nickel",
+      "Carbon and oxygen",
+      "Gold and silver"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "origins",
+    "explanation": "The Big Bang made mainly hydrogen and helium, plus a trace of lithium. Heavier elements were made later in stars."
+  },
+  {
+    "text": "Most of the carbon and oxygen in the universe was made…",
+    "options": [
+      "In the Big Bang",
+      "Inside stars",
+      "In Earth's oceans",
+      "By lightning strikes"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "origins",
+    "explanation": "Stars fuse helium into carbon and oxygen. When stars die, they scatter these elements into space."
+  },
+  {
+    "text": "Which kind of wave carries the Sun's energy through space?",
+    "options": [
+      "Sound waves",
+      "Seismic waves",
+      "Water waves",
+      "Electromagnetic waves"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "origins",
+    "explanation": "Space is almost a vacuum, and sound needs a medium. The Sun's energy crosses space as electromagnetic radiation such as light."
+  },
+  {
+    "text": "Energy from the Sun's core travels outward by radiation, then near the surface mainly by…",
+    "options": [
+      "Conduction",
+      "Induction",
+      "Convection",
+      "Evaporation"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "origins",
+    "explanation": "In the Sun's outer layer, hot plasma rises and cooler plasma sinks, carrying energy to the surface by convection."
+  },
+  {
+    "text": "About how hot is the centre of the Sun?",
+    "options": [
+      "About 5,500 °C",
+      "About 1,000 °C",
+      "About 1 billion °C",
+      "About 15 million °C"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "origins",
+    "explanation": "The core is about 15 million °C. The visible surface is far cooler, at roughly 5,500 °C."
+  },
+  {
+    "text": "Fusion inside massive stars stops releasing energy once the core is mostly…",
+    "options": [
+      "Helium",
+      "Iron",
+      "Carbon",
+      "Uranium"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "origins",
+    "explanation": "Iron nuclei are among the most tightly bound. Fusing iron absorbs energy rather than releasing it, so the star's core collapses."
+  },
+  {
+    "text": "What is the faint microwave glow left over from the early universe called?",
+    "options": [
+      "Solar wind",
+      "Cosmic microwave background",
+      "Aurora",
+      "Zodiacal light"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "origins",
+    "explanation": "The cosmic microwave background is light released about 380,000 years after the Big Bang, now stretched into microwaves."
+  },
+  {
+    "text": "Through fusion, the Sun converts roughly how much mass into energy each second?",
+    "options": [
+      "About 4 kilograms",
+      "About 4 tonnes",
+      "About 4 million tonnes",
+      "About 4 trillion tonnes"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "origins",
+    "explanation": "Using E = mc², the Sun's output means about 4 million tonnes of mass becomes energy every second."
+  },
+  {
+    "text": "About how much solar power reaches each m² at the top of Earth's atmosphere?",
+    "options": [
+      "About 13.6 watts",
+      "About 13,600 watts",
+      "About 136,000 watts",
+      "About 1,360 watts"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "origins",
+    "explanation": "This 'solar constant' is about 1,360 W/m². Less reaches the ground because the atmosphere reflects and absorbs some."
+  },
+  {
+    "text": "A stretched rubber band stores which type of energy?",
+    "options": [
+      "Sound energy",
+      "Elastic potential energy",
+      "Nuclear energy",
+      "Light energy"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "forms",
+    "explanation": "Stretching or squashing an elastic object stores elastic potential energy, which is released when it snaps back."
+  },
+  {
+    "text": "A book on a high shelf has which energy because of its height?",
+    "options": [
+      "Kinetic energy",
+      "Sound energy",
+      "Gravitational potential energy",
+      "Electrical energy"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "forms",
+    "explanation": "Objects raised against gravity store gravitational potential energy. The higher and heavier, the more they store."
+  },
+  {
+    "text": "We are able to see because our eyes detect which form of energy?",
+    "options": [
+      "Sound energy",
+      "Elastic energy",
+      "Light energy",
+      "Nuclear energy"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "forms",
+    "explanation": "Light energy enters the eye and is detected by cells in the retina, which send signals to the brain."
+  },
+  {
+    "text": "A ringing bell sends which form of energy through the air?",
+    "options": [
+      "Sound energy",
+      "Chemical energy",
+      "Nuclear energy",
+      "Magnetic energy"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "forms",
+    "explanation": "A vibrating bell makes air particles vibrate, carrying sound energy as a wave to our ears."
+  },
+  {
+    "text": "A firework releases its stored chemical energy mainly as…",
+    "options": [
+      "Only electricity",
+      "Light, heat and sound",
+      "Nuclear energy",
+      "Elastic energy"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "forms",
+    "explanation": "Chemicals in fireworks react quickly, turning chemical energy into bright light, heat and loud sound."
+  },
+  {
+    "text": "Rubbing your hands together turns kinetic energy into…",
+    "options": [
+      "Nuclear energy",
+      "Chemical energy",
+      "Elastic energy",
+      "Thermal energy"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "forms",
+    "explanation": "Friction between your hands converts the energy of motion into thermal energy, so your hands warm up."
+  },
+  {
+    "text": "A toaster mainly changes electrical energy into…",
+    "options": [
+      "Sound energy",
+      "Thermal energy",
+      "Chemical energy",
+      "Nuclear energy"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "forms",
+    "explanation": "Current flowing through the toaster's wires heats them up, turning electrical energy into thermal energy."
+  },
+  {
+    "text": "Energy carried by moving electric charges is called…",
+    "options": [
+      "Sound energy",
+      "Electrical energy",
+      "Elastic energy",
+      "Nuclear energy"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "forms",
+    "explanation": "Electrical energy is carried by moving charges, such as electrons flowing through a wire."
+  },
+  {
+    "text": "As a ball falls, its gravitational potential energy changes into…",
+    "options": [
+      "Chemical energy",
+      "Nuclear energy",
+      "Kinetic energy",
+      "Electrical energy"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "forms",
+    "explanation": "As the ball drops, it loses height and gains speed, so potential energy becomes kinetic energy."
+  },
+  {
+    "text": "If a car's speed doubles, its kinetic energy becomes…",
+    "options": [
+      "Twice as large",
+      "Half as large",
+      "Unchanged",
+      "Four times larger"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "forms",
+    "explanation": "Kinetic energy is ½mv², so it depends on speed squared. Doubling speed multiplies kinetic energy by four."
+  },
+  {
+    "text": "Which formula gives gravitational potential energy near Earth's surface?",
+    "options": [
+      "½ × m × v²",
+      "m × g × h",
+      "m × c²",
+      "V × I"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "forms",
+    "explanation": "Potential energy = mass × gravitational field strength × height. ½mv² is kinetic energy and V × I is electrical power."
+  },
+  {
+    "text": "Sound energy cannot travel through which of these?",
+    "options": [
+      "Water",
+      "A vacuum",
+      "Steel",
+      "Air"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "forms",
+    "explanation": "Sound is a vibration of particles, so it needs a medium. In a vacuum there are no particles to carry it."
+  },
+  {
+    "text": "Which form of energy is stored in the nucleus of an atom?",
+    "options": [
+      "Nuclear energy",
+      "Chemical energy",
+      "Thermal energy",
+      "Elastic energy"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "forms",
+    "explanation": "Nuclear energy is held in the forces binding protons and neutrons. Chemical energy lies in bonds between atoms."
+  },
+  {
+    "text": "In a car engine, fuel's chemical energy mainly becomes heat and…",
+    "options": [
+      "Nuclear energy",
+      "Kinetic energy",
+      "Light energy",
+      "Elastic energy"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "forms",
+    "explanation": "Burning fuel pushes pistons to move the car, but most of the chemical energy ends up as waste heat."
+  },
+  {
+    "text": "Microwaves, X-rays and visible light are all forms of…",
+    "options": [
+      "Sound waves",
+      "Nuclear fission",
+      "Static electricity",
+      "Electromagnetic radiation"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "forms",
+    "explanation": "They are all electromagnetic waves travelling at the speed of light, differing only in wavelength and frequency."
+  },
+  {
+    "text": "Which colour of visible light carries the most energy per photon?",
+    "options": [
+      "Violet",
+      "Red",
+      "Yellow",
+      "Green"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "forms",
+    "explanation": "Violet light has the shortest wavelength and highest frequency of visible light, so its photons carry the most energy."
+  },
+  {
+    "text": "A swinging pendulum keeps swapping between which two energies?",
+    "options": [
+      "Kinetic and gravitational potential",
+      "Chemical and nuclear",
+      "Sound and light",
+      "Electrical and magnetic"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "forms",
+    "explanation": "At the top of the swing the energy is potential; at the bottom it is mostly kinetic."
+  },
+  {
+    "text": "Temperature measures the average ___ of a substance's particles.",
+    "options": [
+      "Mass",
+      "Kinetic energy",
+      "Electric charge",
+      "Volume"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "forms",
+    "explanation": "Temperature reflects how fast particles move on average. Hotter means faster-moving particles."
+  },
+  {
+    "text": "The energy of a single photon is directly proportional to its…",
+    "options": [
+      "Wavelength",
+      "Speed",
+      "Mass",
+      "Frequency"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "forms",
+    "explanation": "Photon energy E = hf, where h is Planck's constant. Energy rises with frequency and falls as wavelength increases."
+  },
+  {
+    "text": "Absolute zero, the lowest possible temperature, is about…",
+    "options": [
+      "0 °C",
+      "−100 °C",
+      "−373.15 °C",
+      "−273.15 °C"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "forms",
+    "explanation": "At absolute zero (0 K, or −273.15 °C) particles have the minimum possible thermal energy."
+  },
+  {
+    "text": "A 2 kg ball moves at 3 m/s. What is its kinetic energy?",
+    "options": [
+      "9 J",
+      "3 J",
+      "6 J",
+      "18 J"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "forms",
+    "explanation": "Kinetic energy = ½mv² = ½ × 2 × 3² = 9 joules."
+  },
+  {
+    "text": "Breaking a chemical bond always…",
+    "options": [
+      "Releases energy",
+      "Releases light",
+      "Has no energy change",
+      "Absorbs energy"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "forms",
+    "explanation": "Energy is needed to break bonds. Reactions release energy when forming new bonds gives out more than breaking old ones took."
+  },
+  {
+    "text": "Which of these has the highest-energy photons?",
+    "options": [
+      "Radio waves",
+      "Infrared",
+      "Visible light",
+      "Gamma rays"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "forms",
+    "explanation": "Gamma rays have the highest frequency in the electromagnetic spectrum, so each photon carries the most energy."
+  },
+  {
+    "text": "Which unit measures power, the rate at which energy is used?",
+    "options": [
+      "Joule",
+      "Metre",
+      "Kilogram",
+      "Watt"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "laws",
+    "explanation": "Power is measured in watts. One watt means one joule of energy transferred every second."
+  },
+  {
+    "text": "Household electricity bills usually measure energy in…",
+    "options": [
+      "Kilometres",
+      "Kilograms",
+      "Kilowatt-hours",
+      "Kelvins"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "laws",
+    "explanation": "A kilowatt-hour is the energy used by a 1,000-watt appliance running for one hour."
+  },
+  {
+    "text": "What happens to most 'wasted' energy in machines?",
+    "options": [
+      "It disappears",
+      "It turns into mass",
+      "It becomes new fuel",
+      "It becomes heat"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "laws",
+    "explanation": "Energy is never lost, but friction and resistance turn much of it into heat that spreads out and is hard to use."
+  },
+  {
+    "text": "Which unit is commonly used for the energy in food?",
+    "options": [
+      "Volts",
+      "Calories",
+      "Amperes",
+      "Ohms"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "laws",
+    "explanation": "Food labels list energy in kilocalories (often just called Calories) or kilojoules."
+  },
+  {
+    "text": "A machine that wastes less of its input energy is said to be more…",
+    "options": [
+      "Powerful",
+      "Massive",
+      "Efficient",
+      "Renewable"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "laws",
+    "explanation": "Efficiency is the share of input energy turned into useful output. Less waste means higher efficiency."
+  },
+  {
+    "text": "Heat naturally flows from…",
+    "options": [
+      "Hot objects to cold ones",
+      "Cold objects to hot ones",
+      "Heavy objects to light ones",
+      "Small objects to large ones"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "laws",
+    "explanation": "Thermal energy spreads from hotter to colder places until both reach the same temperature."
+  },
+  {
+    "text": "A 100-watt bulb uses how much energy every second?",
+    "options": [
+      "100 joules",
+      "1 joule",
+      "10 joules",
+      "1,000 joules"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "laws",
+    "explanation": "One watt is one joule per second, so a 100 W bulb uses 100 joules each second."
+  },
+  {
+    "text": "Power is equal to energy transferred divided by…",
+    "options": [
+      "Mass",
+      "Time",
+      "Distance",
+      "Voltage"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "laws",
+    "explanation": "Power = energy ÷ time. Using the same energy in less time means more power."
+  },
+  {
+    "text": "A machine takes in 100 J and delivers 25 J of useful energy. Its efficiency is…",
+    "options": [
+      "4%",
+      "75%",
+      "125%",
+      "25%"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "laws",
+    "explanation": "Efficiency = useful output ÷ total input = 25 ÷ 100 = 25%. The other 75 J is wasted, mostly as heat."
+  },
+  {
+    "text": "The second law of thermodynamics says the entropy of an isolated system…",
+    "options": [
+      "Never decreases",
+      "Always decreases",
+      "Always stays at zero",
+      "Equals its energy"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "laws",
+    "explanation": "Entropy, a measure of energy spreading out or disorder, stays the same or increases in an isolated system."
+  },
+  {
+    "text": "In physics, work is done when a force moves an object through a…",
+    "options": [
+      "Temperature",
+      "Distance",
+      "Voltage",
+      "Magnetic field"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "laws",
+    "explanation": "Work = force × distance moved in the direction of the force. It is measured in joules, like energy."
+  },
+  {
+    "text": "Which energy conversion happens in an electric motor?",
+    "options": [
+      "Kinetic → electrical",
+      "Chemical → nuclear",
+      "Electrical → kinetic",
+      "Light → sound"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "laws",
+    "explanation": "A motor uses electric current and magnetism to make something spin. A generator does the reverse."
+  },
+  {
+    "text": "The horsepower is a unit of…",
+    "options": [
+      "Energy",
+      "Force",
+      "Power",
+      "Speed"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "laws",
+    "explanation": "One horsepower is about 746 watts. It was introduced by James Watt to compare steam engines with horses."
+  },
+  {
+    "text": "One calorie is roughly the energy needed to warm 1 gram of water by…",
+    "options": [
+      "0.1 °C",
+      "1 °C",
+      "10 °C",
+      "100 °C"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "laws",
+    "explanation": "A calorie is about 4.2 joules, the energy to raise 1 g of water by 1 °C. A food Calorie is 1,000 of these."
+  },
+  {
+    "text": "What does the zeroth law of thermodynamics establish?",
+    "options": [
+      "Conservation of momentum",
+      "Entropy always increases",
+      "Absolute zero is unreachable",
+      "Thermal equilibrium"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "laws",
+    "explanation": "If two objects are each in thermal equilibrium with a third, they are in equilibrium with each other. This defines temperature."
+  },
+  {
+    "text": "An ideal heat engine runs between 600 K and 300 K. Its maximum efficiency is…",
+    "options": [
+      "25%",
+      "50%",
+      "75%",
+      "100%"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "laws",
+    "explanation": "Carnot efficiency = 1 − 300/600 = 0.5. Real engines always do worse than this limit."
+  },
+  {
+    "text": "One electronvolt is the energy an electron gains moving through…",
+    "options": [
+      "1 volt",
+      "1 ohm",
+      "1 metre",
+      "1 kelvin"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "laws",
+    "explanation": "An electronvolt is the energy gained by one electron accelerated through 1 volt, about 1.6 × 10⁻¹⁹ joules."
+  },
+  {
+    "text": "Roughly what is the specific heat capacity of liquid water?",
+    "options": [
+      "4,200 J/(kg·°C)",
+      "42 J/(kg·°C)",
+      "420 J/(kg·°C)",
+      "42,000 J/(kg·°C)"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "laws",
+    "explanation": "It takes about 4,200 J to warm 1 kg of water by 1 °C, which is why water stores heat so well."
+  },
+  {
+    "text": "Lifting a 10 kg mass by 2 m (g ≈ 10 m/s²) needs about how much energy?",
+    "options": [
+      "5 J",
+      "20 J",
+      "200 J",
+      "2,000 J"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "laws",
+    "explanation": "Gravitational potential energy = mgh = 10 × 10 × 2 = 200 joules."
+  },
+  {
+    "text": "A heat pump can deliver more heat than the electricity it uses because it…",
+    "options": [
+      "Moves heat from its surroundings",
+      "Creates energy from nothing",
+      "Burns hidden fuel",
+      "Breaks the first law"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "laws",
+    "explanation": "A heat pump uses electricity to move existing heat from outside air or ground indoors, so it doesn't break conservation of energy."
+  },
+  {
+    "text": "Latent heat is energy absorbed or released during…",
+    "options": [
+      "A change in speed",
+      "A change of state",
+      "Radioactive decay",
+      "A change in height"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "laws",
+    "explanation": "When ice melts or water boils, energy goes into breaking bonds between molecules, so the temperature stays the same."
+  },
+  {
+    "text": "Petrol (gasoline) is mainly made from which fossil fuel?",
+    "options": [
+      "Coal",
+      "Crude oil",
+      "Natural gas",
+      "Peat"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "fossil",
+    "explanation": "Crude oil is refined into petrol, diesel, jet fuel and other products."
+  },
+  {
+    "text": "Why are fossil fuels called non-renewable?",
+    "options": [
+      "They only work at night",
+      "They contain no carbon",
+      "They are made in factories",
+      "They take millions of years to form"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "fossil",
+    "explanation": "Fossil fuels form over millions of years, so we use them far faster than nature can replace them."
+  },
+  {
+    "text": "Natural gas is mostly made of which gas?",
+    "options": [
+      "Oxygen",
+      "Methane",
+      "Helium",
+      "Hydrogen"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "fossil",
+    "explanation": "Natural gas is mainly methane (CH₄), with smaller amounts of ethane, propane and other gases."
+  },
+  {
+    "text": "What is the process of digging coal out of the ground called?",
+    "options": [
+      "Mining",
+      "Refining",
+      "Distilling",
+      "Smelting"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "fossil",
+    "explanation": "Coal is mined, either in underground tunnels or in large open pits near the surface."
+  },
+  {
+    "text": "Crude oil is mainly taken out of the ground by…",
+    "options": [
+      "Drilling wells",
+      "Burning forests",
+      "Melting rocks",
+      "Filtering seawater"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "fossil",
+    "explanation": "Oil is pumped up through wells drilled into rock layers on land or under the seabed."
+  },
+  {
+    "text": "Burning a fuel needs which gas from the air?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Helium",
+      "Carbon dioxide"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "fossil",
+    "explanation": "Combustion is a reaction between a fuel and oxygen that releases heat and light."
+  },
+  {
+    "text": "Which fossil fuel is a black or brown rock?",
+    "options": [
+      "Coal",
+      "Natural gas",
+      "Crude oil",
+      "Propane"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "fossil",
+    "explanation": "Coal is a solid sedimentary rock. Oil is a liquid and natural gas and propane are gases."
+  },
+  {
+    "text": "Smog and soot from burning fuels are forms of…",
+    "options": [
+      "Noise pollution",
+      "Light pollution",
+      "Air pollution",
+      "Radioactive fallout"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "fossil",
+    "explanation": "Burning fuels releases tiny particles and gases that pollute the air and can harm our lungs."
+  },
+  {
+    "text": "Hydrocarbons are compounds made of hydrogen and…",
+    "options": [
+      "Oxygen",
+      "Carbon",
+      "Nitrogen",
+      "Helium"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "fossil",
+    "explanation": "Oil and natural gas are mostly hydrocarbons, molecules built only from hydrogen and carbon atoms."
+  },
+  {
+    "text": "Oil and natural gas formed mostly from the remains of…",
+    "options": [
+      "Dinosaurs",
+      "Tiny marine organisms",
+      "Volcanic rock",
+      "Meteorites"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "fossil",
+    "explanation": "Plankton and algae settled on ancient sea floors, were buried and slowly 'cooked' by heat and pressure into oil and gas."
+  },
+  {
+    "text": "Crude oil is separated into parts by boiling point using…",
+    "options": [
+      "Electrolysis",
+      "Fractional distillation",
+      "Fermentation",
+      "Nuclear fission"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "fossil",
+    "explanation": "In a fractionating column, crude oil vapour cools as it rises, and different fractions condense at different heights."
+  },
+  {
+    "text": "Burning fuel without enough oxygen can produce which poisonous gas?",
+    "options": [
+      "Oxygen",
+      "Helium",
+      "Neon",
+      "Carbon monoxide"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "fossil",
+    "explanation": "Incomplete combustion makes carbon monoxide, an odourless gas that stops blood carrying oxygen."
+  },
+  {
+    "text": "Sulfur released by burning some coal can lead to…",
+    "options": [
+      "Earthquakes",
+      "Tsunamis",
+      "Acid rain",
+      "Solar flares"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "fossil",
+    "explanation": "Sulfur dioxide dissolves in water in the air, forming acids that fall as acid rain and damage lakes and forests."
+  },
+  {
+    "text": "Fracking releases gas by pumping what into rock at high pressure?",
+    "options": [
+      "Liquid nitrogen",
+      "Molten metal",
+      "Water, sand and chemicals",
+      "Crude oil"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "fossil",
+    "explanation": "High-pressure fluid cracks the rock, and sand holds the cracks open so trapped gas or oil can flow out."
+  },
+  {
+    "text": "Which fossil fuel usually releases the least CO₂ per unit of energy?",
+    "options": [
+      "Coal",
+      "Lignite",
+      "Heavy fuel oil",
+      "Natural gas"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "fossil",
+    "explanation": "Methane has more hydrogen per carbon atom than coal or oil, so it emits less CO₂ for the same energy."
+  },
+  {
+    "text": "Peat is an early stage in the formation of…",
+    "options": [
+      "Crude oil",
+      "Natural gas",
+      "Coal",
+      "Uranium"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "fossil",
+    "explanation": "Buried peat is compressed and heated over millions of years, becoming lignite and then harder types of coal."
+  },
+  {
+    "text": "Which type of coal has the highest carbon content?",
+    "options": [
+      "Lignite",
+      "Sub-bituminous",
+      "Peat",
+      "Anthracite"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "fossil",
+    "explanation": "Anthracite is the hardest, oldest coal, with roughly 90% carbon. Lignite (brown coal) has the least."
+  },
+  {
+    "text": "Which fossil fuel is heated without air to make coke for steelmaking?",
+    "options": [
+      "Coal",
+      "Natural gas",
+      "Crude oil",
+      "Propane"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "fossil",
+    "explanation": "Heating coal without air drives off gases and leaves coke, nearly pure carbon used to turn iron ore into iron."
+  },
+  {
+    "text": "In a combined-cycle gas plant, hot exhaust from the gas turbine is used to…",
+    "options": [
+      "Make steam for a steam turbine",
+      "Freeze carbon dioxide",
+      "Split water into hydrogen",
+      "Charge batteries directly"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "fossil",
+    "explanation": "Reusing exhaust heat to drive a second turbine makes combined-cycle plants much more efficient than single-cycle ones."
+  },
+  {
+    "text": "In carbon capture and storage, where is captured CO₂ usually stored?",
+    "options": [
+      "High in the atmosphere",
+      "Deep underground rock layers",
+      "In open lakes",
+      "In household tanks"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "fossil",
+    "explanation": "CO₂ is compressed and injected into deep porous rock, such as old oil and gas fields, sealed by rock above."
+  },
+  {
+    "text": "A petrol's octane rating describes its resistance to…",
+    "options": [
+      "Freezing",
+      "Evaporating",
+      "Engine knocking",
+      "Rusting"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "fossil",
+    "explanation": "Higher-octane fuel resists igniting too early under compression, which causes a knocking sound and engine damage."
+  },
+  {
+    "text": "Leaks from gas systems release which gas, far stronger than CO₂ as a greenhouse gas per kg?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Argon",
+      "Methane"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "fossil",
+    "explanation": "Kilogram for kilogram, methane traps far more heat than CO₂, though it breaks down in the air within about a decade."
+  },
+  {
+    "text": "Liquefied natural gas (LNG) is made by…",
+    "options": [
+      "Mixing gas with water",
+      "Heating gas to 1,000 °C",
+      "Cooling gas to about −162 °C",
+      "Adding salt to the gas"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "fossil",
+    "explanation": "Cooling methane to about −162 °C turns it into a liquid about 600 times smaller in volume, so it can be shipped."
+  },
+  {
+    "text": "A wind turbine turns the wind's ___ energy into electricity.",
+    "options": [
+      "Chemical",
+      "Nuclear",
+      "Elastic",
+      "Kinetic"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Moving air has kinetic energy. It turns the blades, which spin a generator."
+  },
+  {
+    "text": "Geothermal energy uses heat from…",
+    "options": [
+      "The Moon",
+      "Ocean salt",
+      "Inside the Earth",
+      "Lightning"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Geothermal plants and heat pumps tap the heat stored in rocks and water beneath Earth's surface."
+  },
+  {
+    "text": "Burning wood for heat is an example of which energy source?",
+    "options": [
+      "Geothermal",
+      "Tidal",
+      "Biomass",
+      "Nuclear"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Biomass is material from living or recently living things, such as wood, crops and animal waste."
+  },
+  {
+    "text": "Which renewable source uses the rise and fall of the sea?",
+    "options": [
+      "Geothermal power",
+      "Tidal power",
+      "Solar power",
+      "Biomass"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Tidal power uses the movement of water as tides come in and go out to turn turbines."
+  },
+  {
+    "text": "When do solar panels produce the least electricity?",
+    "options": [
+      "At noon",
+      "In summer",
+      "At night",
+      "On clear days"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Solar panels need light. With no sunlight at night, they produce no electricity."
+  },
+  {
+    "text": "Most large modern wind turbines have how many blades?",
+    "options": [
+      "One",
+      "Six",
+      "Twelve",
+      "Three"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Three blades give a good balance of efficiency, smooth running and cost for large turbines."
+  },
+  {
+    "text": "What is a large group of wind turbines in one place called?",
+    "options": [
+      "A wind tunnel",
+      "A wind farm",
+      "A wind sock",
+      "A wind chime"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Wind farms group many turbines together on land or at sea and connect them to the grid."
+  },
+  {
+    "text": "Which renewable source uses flowing rivers to make electricity?",
+    "options": [
+      "Geothermal power",
+      "Solar power",
+      "Hydropower",
+      "Biomass"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Hydropower uses moving water to spin turbines. It is one of the oldest sources of electricity."
+  },
+  {
+    "text": "A solar water heater uses sunlight to…",
+    "options": [
+      "Heat water",
+      "Generate wind",
+      "Split atoms",
+      "Purify oil"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Dark panels on a roof absorb sunlight and transfer the heat to water flowing through them."
+  },
+  {
+    "text": "Biogas, a renewable fuel, is made from rotting…",
+    "options": [
+      "Glass",
+      "Iron ore",
+      "Sand",
+      "Organic waste"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Bacteria break down food scraps, manure and sewage, giving off a gas that is mostly methane."
+  },
+  {
+    "text": "Which renewable source works especially well in sunny deserts?",
+    "options": [
+      "Solar power",
+      "Tidal power",
+      "Hydropower",
+      "Wave power"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "renewables",
+    "explanation": "Deserts get strong, reliable sunshine and few clouds, which suits solar panels. Tidal and wave power need the sea."
+  },
+  {
+    "text": "Most solar cells are made from which element?",
+    "options": [
+      "Silicon",
+      "Iron",
+      "Copper",
+      "Lead"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Silicon is a semiconductor that can turn light into electric current. It is made from sand (silica)."
+  },
+  {
+    "text": "Iceland heats most of its homes using which source?",
+    "options": [
+      "Coal",
+      "Geothermal energy",
+      "Nuclear power",
+      "Oil"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Iceland sits on volcanic ground, so hot underground water is piped to heat around nine in ten homes."
+  },
+  {
+    "text": "Why are many wind turbines built offshore?",
+    "options": [
+      "Water cools the generator",
+      "Winds are stronger and steadier",
+      "Fish help turn the blades",
+      "Salt boosts output"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Winds over the sea meet fewer obstacles, so they blow harder and more consistently than over land."
+  },
+  {
+    "text": "In the word 'photovoltaic', what does 'photo' refer to?",
+    "options": [
+      "Heat",
+      "Light",
+      "Water",
+      "Wind"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "'Photo' comes from the Greek for light, and 'voltaic' refers to voltage. Light produces a voltage in the cell."
+  },
+  {
+    "text": "In a hydro plant, which machine turns flowing water into rotation?",
+    "options": [
+      "A turbine",
+      "A transformer",
+      "An inverter",
+      "A capacitor"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Water pushes against the turbine's blades, spinning a shaft connected to a generator."
+  },
+  {
+    "text": "Which fuel is made by fermenting crops such as sugarcane or corn?",
+    "options": [
+      "Ethanol",
+      "Kerosene",
+      "Petrol",
+      "Propane"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Yeast ferments sugars into ethanol, an alcohol that can be blended with petrol as a biofuel."
+  },
+  {
+    "text": "Concentrated solar power plants use mirrors to…",
+    "options": [
+      "Reflect light into space",
+      "Cool the solar panels",
+      "Store electricity",
+      "Focus sunlight to heat a fluid"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Mirrors focus sunlight onto a receiver, heating a fluid that makes steam to drive a turbine."
+  },
+  {
+    "text": "Tidal power is more predictable than wind power because tides follow…",
+    "options": [
+      "Daily weather",
+      "Ocean temperatures",
+      "The Moon's regular orbit",
+      "Seasonal rainfall"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Tides are set by the Moon's and Sun's gravity, so their timing can be predicted years ahead."
+  },
+  {
+    "text": "What does an inverter in a solar power system do?",
+    "options": [
+      "Converts DC into AC",
+      "Converts AC into DC",
+      "Stores heat",
+      "Cools the panels"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Solar panels produce direct current. An inverter turns it into alternating current for homes and the grid."
+  },
+  {
+    "text": "Why is burning biomass often described as carbon-neutral?",
+    "options": [
+      "Growing plants absorbed that CO₂",
+      "It releases no gases",
+      "It contains no carbon",
+      "It burns without oxygen"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Plants take in CO₂ as they grow, roughly balancing what is released when burned, if they are replanted."
+  },
+  {
+    "text": "Ocean waves get most of their energy from…",
+    "options": [
+      "Tides",
+      "Undersea volcanoes",
+      "Wind blowing over the sea",
+      "Earth's magnetic field"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "renewables",
+    "explanation": "Wind transfers energy to the sea surface, building waves. Wave power is therefore indirectly solar energy."
+  },
+  {
+    "text": "Wind power rises with the cube of wind speed. Doubling wind speed gives…",
+    "options": [
+      "8 times the power",
+      "2 times the power",
+      "4 times the power",
+      "16 times the power"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "Power ∝ v³, so doubling speed gives 2³ = 8 times the power. That's why turbine location matters so much."
+  },
+  {
+    "text": "What is the Betz limit's maximum share of wind energy a turbine can capture?",
+    "options": [
+      "About 25%",
+      "About 90%",
+      "About 59%",
+      "100%"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "The Betz limit is 16/27, about 59%. Some air must keep flowing past the blades, so a turbine can't take it all."
+  },
+  {
+    "text": "Adding impurities to silicon to make a solar cell's p-n junction is called…",
+    "options": [
+      "Annealing",
+      "Galvanising",
+      "Tempering",
+      "Doping"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "Doping with elements like phosphorus or boron creates n-type and p-type silicon, forming the junction that separates charges."
+  },
+  {
+    "text": "Geothermal power plants in volcanic areas mostly drive turbines with…",
+    "options": [
+      "Flowing lava",
+      "Steam from hot groundwater",
+      "Compressed air",
+      "Molten salt"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "Wells tap hot water and steam deep underground. The steam spins turbines, then is cooled and often reinjected."
+  },
+  {
+    "text": "How does a 'run-of-the-river' hydro plant differ from a dam plant?",
+    "options": [
+      "It uses seawater",
+      "It burns fuel",
+      "It needs no turbine",
+      "It has little or no reservoir"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "Run-of-the-river plants use a river's natural flow with little storage, so output depends on how much water flows."
+  },
+  {
+    "text": "A wind turbine's power output scales with the square of its…",
+    "options": [
+      "Blade length",
+      "Tower width",
+      "Blade colour",
+      "Nacelle weight"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "Power depends on the swept area, πr². Doubling blade length gives four times the area and power."
+  },
+  {
+    "text": "A solar cell material's band gap mainly determines…",
+    "options": [
+      "How much it weighs",
+      "Which photon energies it absorbs",
+      "Its colour when painted",
+      "How fast it rusts"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "Only photons with energy at least equal to the band gap can free electrons and produce current."
+  },
+  {
+    "text": "Biodiesel is commonly made from…",
+    "options": [
+      "Vegetable oils or animal fats",
+      "Crushed coal",
+      "Seawater",
+      "Uranium ore"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "Oils and fats react with an alcohol to make biodiesel, which can run in diesel engines."
+  },
+  {
+    "text": "Ocean thermal energy conversion (OTEC) uses the difference between…",
+    "options": [
+      "Warm surface and cold deep water",
+      "High and low tide heights",
+      "Salt water and fresh water",
+      "Daytime and night sunlight"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "OTEC runs a heat engine on the temperature gap between warm tropical surface water and cold deep water."
+  },
+  {
+    "text": "A solar tracker increases a panel's output by…",
+    "options": [
+      "Turning it to face the Sun",
+      "Cooling it with seawater",
+      "Converting AC into DC",
+      "Reflecting light away"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "renewables",
+    "explanation": "Trackers rotate panels through the day so sunlight hits them more directly, capturing more energy."
+  },
+  {
+    "text": "What is the tiny, dense centre of an atom called?",
+    "options": [
+      "The electron cloud",
+      "The shell",
+      "The orbit",
+      "The nucleus"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "nuclear",
+    "explanation": "The nucleus contains protons and neutrons and holds almost all of an atom's mass."
+  },
+  {
+    "text": "Splitting a heavy atomic nucleus to release energy is called…",
+    "options": [
+      "Fusion",
+      "Combustion",
+      "Fission",
+      "Evaporation"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "nuclear",
+    "explanation": "In fission, a heavy nucleus such as uranium splits into smaller nuclei, releasing energy and neutrons."
+  },
+  {
+    "text": "Joining light atomic nuclei together to release energy is called…",
+    "options": [
+      "Fission",
+      "Fusion",
+      "Combustion",
+      "Condensation"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "nuclear",
+    "explanation": "Fusion joins light nuclei such as hydrogen into heavier ones. It powers stars."
+  },
+  {
+    "text": "Nuclear power plants use heat from their reactor to make…",
+    "options": [
+      "Wind",
+      "Sunlight",
+      "Steam",
+      "Petrol"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "nuclear",
+    "explanation": "Reactor heat boils water into steam, which spins turbines connected to generators."
+  },
+  {
+    "text": "Which material is commonly used to shield against gamma rays?",
+    "options": [
+      "Paper",
+      "Cloth",
+      "Lead",
+      "Wood"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "nuclear",
+    "explanation": "Dense materials like lead and thick concrete absorb gamma rays well. Paper and cloth barely slow them."
+  },
+  {
+    "text": "Unlike coal plants, nuclear plants release almost no ___ while running.",
+    "options": [
+      "Heat",
+      "Steam",
+      "Carbon dioxide",
+      "Electricity"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "nuclear",
+    "explanation": "Fission doesn't involve burning, so running reactors emit almost no CO₂, though they still release heat and steam."
+  },
+  {
+    "text": "Atoms of the same element with different numbers of neutrons are called…",
+    "options": [
+      "Isotopes",
+      "Ions",
+      "Molecules",
+      "Isomers"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "nuclear",
+    "explanation": "Isotopes have the same number of protons but different numbers of neutrons, like carbon-12 and carbon-14."
+  },
+  {
+    "text": "Which particle triggers fission of uranium in a reactor?",
+    "options": [
+      "A proton",
+      "A neutron",
+      "An electron",
+      "A photon"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "nuclear",
+    "explanation": "A neutron is absorbed by a uranium nucleus, which splits and releases more neutrons to keep the reaction going."
+  },
+  {
+    "text": "Which type of radiation can be stopped by a sheet of paper?",
+    "options": [
+      "Beta",
+      "Gamma",
+      "Alpha",
+      "X-rays"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "nuclear",
+    "explanation": "Alpha particles are heavy and highly charged, so they are stopped by paper or skin. Gamma rays need lead or concrete."
+  },
+  {
+    "text": "What is the job of control rods in a nuclear reactor?",
+    "options": [
+      "Absorb neutrons to slow the reaction",
+      "Add extra fuel",
+      "Generate electricity directly",
+      "Cool the steam"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "nuclear",
+    "explanation": "Control rods contain neutron absorbers like boron. Lowering them in slows the chain reaction."
+  },
+  {
+    "text": "The time for half the nuclei in a radioactive sample to decay is its…",
+    "options": [
+      "Full life",
+      "Shelf life",
+      "Decay limit",
+      "Half-life"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "nuclear",
+    "explanation": "Half-lives range from fractions of a second to billions of years, depending on the isotope."
+  },
+  {
+    "text": "After fission, the products weigh slightly less. The missing mass became…",
+    "options": [
+      "Energy",
+      "Extra protons",
+      "Oxygen",
+      "Electrons"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "nuclear",
+    "explanation": "By E = mc², the small loss of mass in fission appears as a large amount of energy."
+  },
+  {
+    "text": "A chain reaction that is exactly self-sustaining is described as…",
+    "options": [
+      "Subcritical",
+      "Supercritical",
+      "Critical",
+      "Fissile"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "nuclear",
+    "explanation": "In a critical reactor, each fission causes on average exactly one more. Subcritical dies out; supercritical grows."
+  },
+  {
+    "text": "What does the moderator in a nuclear reactor do?",
+    "options": [
+      "Absorbs all neutrons",
+      "Speeds neutrons up",
+      "Slows neutrons down",
+      "Cools the steam"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "nuclear",
+    "explanation": "Water or graphite slows fast neutrons so uranium-235 is much more likely to capture them and split."
+  },
+  {
+    "text": "Tokamak fusion reactors hold their hot plasma in place using…",
+    "options": [
+      "Glass walls",
+      "Blocks of ice",
+      "Thick concrete",
+      "Magnetic fields"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "nuclear",
+    "explanation": "Plasma at over 100 million °C would damage any wall, so strong magnetic fields keep it suspended."
+  },
+  {
+    "text": "Which hydrogen isotopes are the main fuel planned for fusion power?",
+    "options": [
+      "Protium only",
+      "Helium and lithium",
+      "Carbon-12 and carbon-14",
+      "Deuterium and tritium"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "nuclear",
+    "explanation": "Deuterium–tritium fusion is the easiest to achieve, producing helium and a high-energy neutron."
+  },
+  {
+    "text": "Beta-minus radiation consists of…",
+    "options": [
+      "Helium nuclei",
+      "Fast-moving electrons",
+      "High-energy photons",
+      "Neutrons"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "nuclear",
+    "explanation": "In beta-minus decay a neutron turns into a proton, emitting a fast electron. Alpha particles are helium nuclei."
+  },
+  {
+    "text": "What is a breeder reactor designed to do?",
+    "options": [
+      "Run on hydrogen gas",
+      "Produce no heat",
+      "Make more fissile fuel than it uses",
+      "Fuse helium atoms"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "nuclear",
+    "explanation": "Breeder reactors turn non-fissile uranium-238 or thorium into fissile plutonium-239 or uranium-233."
+  },
+  {
+    "text": "What does a power plant's generator produce?",
+    "options": [
+      "Fuel",
+      "Steam",
+      "Electricity",
+      "Wind"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "grid",
+    "explanation": "A generator converts the kinetic energy of a spinning shaft into electrical energy."
+  },
+  {
+    "text": "Which of these is a good conductor of electricity?",
+    "options": [
+      "Rubber",
+      "Copper",
+      "Glass",
+      "Wood"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "grid",
+    "explanation": "Copper lets electric current flow easily, which is why most electrical wires are made of it."
+  },
+  {
+    "text": "What is the unit of electric current?",
+    "options": [
+      "Volt",
+      "Ampere",
+      "Ohm",
+      "Watt"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "grid",
+    "explanation": "Current is measured in amperes (amps). Volts measure voltage and ohms measure resistance."
+  },
+  {
+    "text": "What does a switch do in an electric circuit?",
+    "options": [
+      "Opens or closes the circuit",
+      "Stores electricity",
+      "Makes electricity",
+      "Changes AC into DC"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "grid",
+    "explanation": "Current flows only around a complete loop. A switch breaks or completes that loop."
+  },
+  {
+    "text": "Mains electricity in homes is usually which type?",
+    "options": [
+      "Alternating current (AC)",
+      "Direct current (DC)",
+      "Static electricity",
+      "Magnetic current"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "grid",
+    "explanation": "Mains electricity is AC, which reverses direction many times a second and is easy to transform between voltages."
+  },
+  {
+    "text": "Which material usually covers electrical wires to keep us safe?",
+    "options": [
+      "Copper",
+      "Aluminium",
+      "Steel",
+      "Plastic"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "grid",
+    "explanation": "Plastic is an insulator, so it stops current reaching anyone who touches the wire."
+  },
+  {
+    "text": "Tall metal towers that carry high-voltage power lines are called…",
+    "options": [
+      "Turbines",
+      "Chimneys",
+      "Silos",
+      "Pylons"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "grid",
+    "explanation": "Pylons hold power lines high above the ground, carrying electricity from power stations across the country."
+  },
+  {
+    "text": "A battery provides which kind of current?",
+    "options": [
+      "Alternating current (AC)",
+      "Three-phase current",
+      "Direct current (DC)",
+      "Static current"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "grid",
+    "explanation": "A battery pushes current in one direction only, which is direct current."
+  },
+  {
+    "text": "What does a transformer change?",
+    "options": [
+      "The voltage of AC",
+      "AC into DC",
+      "Heat into light",
+      "Fuel into power"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "grid",
+    "explanation": "Transformers step AC voltage up for transmission and down again for safe use in homes."
+  },
+  {
+    "text": "Ohm's law states that voltage equals current multiplied by…",
+    "options": [
+      "Power",
+      "Time",
+      "Frequency",
+      "Resistance"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "grid",
+    "explanation": "V = I × R. For a given voltage, a higher resistance means a smaller current."
+  },
+  {
+    "text": "Electrical power in watts equals voltage multiplied by…",
+    "options": [
+      "Resistance",
+      "Time",
+      "Charge",
+      "Current"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "grid",
+    "explanation": "P = V × I. A 230 V appliance drawing 2 A uses 460 W."
+  },
+  {
+    "text": "Most generators make electricity by rotating…",
+    "options": [
+      "Solar cells",
+      "Batteries",
+      "Magnets near coils of wire",
+      "Fuel cells"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "grid",
+    "explanation": "Moving a magnetic field past a coil induces a current in it. This is called electromagnetic induction."
+  },
+  {
+    "text": "Mains AC runs at 50 Hz in many countries. What frequency do most others use?",
+    "options": [
+      "60 Hz",
+      "25 Hz",
+      "100 Hz",
+      "1,000 Hz"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "grid",
+    "explanation": "Grids are built at either 50 or 60 hertz, meaning the current reverses direction 100 or 120 times per second."
+  },
+  {
+    "text": "Which safety device melts to break a circuit if the current is too high?",
+    "options": [
+      "A transformer",
+      "A fuse",
+      "A diode",
+      "A capacitor"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "grid",
+    "explanation": "A fuse contains a thin wire that melts when too much current flows, cutting power before wires overheat."
+  },
+  {
+    "text": "In a parallel circuit, if one bulb blows, the other bulbs…",
+    "options": [
+      "Stay lit",
+      "All go out",
+      "Start flashing",
+      "Explode"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "grid",
+    "explanation": "Each bulb in a parallel circuit has its own path, so current still reaches the others."
+  },
+  {
+    "text": "What is a 'peaker plant'?",
+    "options": [
+      "A plant on a mountain top",
+      "One run only at times of peak demand",
+      "A plant with very tall chimneys",
+      "The oldest plant on a grid"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "grid",
+    "explanation": "Peaker plants, often gas turbines, start quickly and run mainly when electricity demand is highest."
+  },
+  {
+    "text": "Who discovered electromagnetic induction in 1831, the basis of generators?",
+    "options": [
+      "Michael Faraday",
+      "Thomas Edison",
+      "Isaac Newton",
+      "Albert Einstein"
+    ],
+    "correctIndex": 0,
+    "difficulty": "medium",
+    "category": "grid",
+    "explanation": "Faraday showed that a changing magnetic field induces a current in a wire, the principle behind generators and transformers."
+  },
+  {
+    "text": "A transformer has 100 primary turns and 1,000 secondary turns. 230 V in gives…",
+    "options": [
+      "23 V",
+      "230 V",
+      "2,300 V",
+      "23,000 V"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "grid",
+    "explanation": "Voltage scales with the turns ratio: 230 × 1,000/100 = 2,300 V. This is a step-up transformer."
+  },
+  {
+    "text": "What does HVDC stand for in power transmission?",
+    "options": [
+      "High-voltage direct current",
+      "Heavy-voltage dual cable",
+      "High-velocity data channel",
+      "Hydro-voltage distribution circuit"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "grid",
+    "explanation": "HVDC lines carry DC at very high voltage. They lose less energy over very long distances and undersea cables."
+  },
+  {
+    "text": "If electricity demand suddenly exceeds supply, grid frequency tends to…",
+    "options": [
+      "Rise",
+      "Stay exactly the same",
+      "Fall",
+      "Double"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "grid",
+    "explanation": "Extra load slows the spinning generators, lowering frequency. Operators add supply to bring it back."
+  },
+  {
+    "text": "Transformers only work with AC because they need a…",
+    "options": [
+      "Constant current",
+      "Changing magnetic field",
+      "High resistance",
+      "Permanent magnet"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "grid",
+    "explanation": "AC creates a constantly changing magnetic field in the core, which induces a voltage in the secondary coil."
+  },
+  {
+    "text": "A 3 kW kettle on a 230 V supply draws roughly what current?",
+    "options": [
+      "0.08 A",
+      "1.3 A",
+      "690 A",
+      "13 A"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "grid",
+    "explanation": "Current = power ÷ voltage = 3,000 ÷ 230 ≈ 13 amps."
+  },
+  {
+    "text": "In electricity grids, 'baseload' refers to…",
+    "options": [
+      "Power used only at night",
+      "Power from batteries only",
+      "The minimum steady demand",
+      "The highest yearly peak"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "grid",
+    "explanation": "Baseload is the lowest level of demand over a period, which must be met around the clock."
+  },
+  {
+    "text": "In the 'War of the Currents', who promoted DC power systems?",
+    "options": [
+      "Nikola Tesla",
+      "Thomas Edison",
+      "George Westinghouse",
+      "Michael Faraday"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "grid",
+    "explanation": "Edison backed DC, while Tesla and Westinghouse promoted AC, which won out because transformers make it easy to change voltage."
+  },
+  {
+    "text": "A rechargeable battery is charged by supplying it with…",
+    "options": [
+      "Cold water",
+      "Sound",
+      "Electric current",
+      "Salt"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "storage",
+    "explanation": "Charging pushes current into the battery, driving chemical reactions that store energy for later."
+  },
+  {
+    "text": "A hot water bottle stores energy as…",
+    "options": [
+      "Electrical energy",
+      "Thermal energy",
+      "Nuclear energy",
+      "Sound energy"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "storage",
+    "explanation": "Hot water holds a lot of thermal energy and releases it slowly as it cools."
+  },
+  {
+    "text": "Phone batteries gradually hold less charge as they…",
+    "options": [
+      "Cool down",
+      "Get lighter",
+      "Age",
+      "Are switched off"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "storage",
+    "explanation": "Repeated charging slowly wears out the battery's materials, so its capacity drops over time."
+  },
+  {
+    "text": "Why does solar power often need energy storage?",
+    "options": [
+      "Panels work only in winter",
+      "Sunlight is too cold",
+      "Panels need fuel to run",
+      "Sunlight isn't available at night"
+    ],
+    "correctIndex": 3,
+    "difficulty": "easy",
+    "category": "storage",
+    "explanation": "Storing extra daytime solar energy lets it be used after sunset."
+  },
+  {
+    "text": "In pumped hydro storage, spare electricity is used to pump water…",
+    "options": [
+      "Into the ocean",
+      "Uphill to a higher reservoir",
+      "Through a solar panel",
+      "Into an oil well"
+    ],
+    "correctIndex": 1,
+    "difficulty": "easy",
+    "category": "storage",
+    "explanation": "Later, the water flows back down through turbines to make electricity when it is needed."
+  },
+  {
+    "text": "Which battery terminal is marked with a plus sign (+)?",
+    "options": [
+      "The positive terminal",
+      "The negative terminal",
+      "The ground wire",
+      "The fuse"
+    ],
+    "correctIndex": 0,
+    "difficulty": "easy",
+    "category": "storage",
+    "explanation": "Batteries have a positive (+) and a negative (−) terminal. Conventional current flows from + to − in the circuit."
+  },
+  {
+    "text": "A wind-up clock stores energy in a…",
+    "options": [
+      "Battery",
+      "Magnet",
+      "Coiled spring",
+      "Light bulb"
+    ],
+    "correctIndex": 2,
+    "difficulty": "easy",
+    "category": "storage",
+    "explanation": "Winding tightens a spring, storing elastic potential energy that slowly drives the clock."
+  },
+  {
+    "text": "A hydrogen fuel cell combines hydrogen with ___ to make electricity.",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon",
+      "Helium"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "storage",
+    "explanation": "Fuel cells react hydrogen with oxygen from the air, producing electricity directly without burning."
+  },
+  {
+    "text": "Besides electricity and heat, a hydrogen fuel cell's only product is…",
+    "options": [
+      "Carbon dioxide",
+      "Methane",
+      "Ozone",
+      "Water"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "storage",
+    "explanation": "Hydrogen and oxygen combine to form H₂O, so a hydrogen fuel cell gives off only water."
+  },
+  {
+    "text": "Splitting water into hydrogen and oxygen using electricity is called…",
+    "options": [
+      "Combustion",
+      "Fermentation",
+      "Distillation",
+      "Electrolysis"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "storage",
+    "explanation": "Electrolysis passes current through water. Hydrogen forms at one electrode and oxygen at the other."
+  },
+  {
+    "text": "A flywheel stores energy as…",
+    "options": [
+      "Chemical energy",
+      "Nuclear energy",
+      "Magnetic energy",
+      "Rotational kinetic energy"
+    ],
+    "correctIndex": 3,
+    "difficulty": "medium",
+    "category": "storage",
+    "explanation": "A heavy wheel spinning fast stores kinetic energy, which can be turned back into electricity by slowing it."
+  },
+  {
+    "text": "A store takes in 100 kWh and gives back 80 kWh. Its round-trip efficiency is…",
+    "options": [
+      "20%",
+      "125%",
+      "80%",
+      "180%"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "storage",
+    "explanation": "Round-trip efficiency = energy out ÷ energy in = 80 ÷ 100 = 80%."
+  },
+  {
+    "text": "Which unit describes how much energy a battery can store?",
+    "options": [
+      "Ohms",
+      "Hertz",
+      "Watt-hours",
+      "Newtons"
+    ],
+    "correctIndex": 2,
+    "difficulty": "medium",
+    "category": "storage",
+    "explanation": "Battery energy is given in watt-hours or kilowatt-hours. A 1 kWh battery can supply 1 kW for one hour."
+  },
+  {
+    "text": "Why is hydrogen hard to store compactly?",
+    "options": [
+      "It is extremely heavy",
+      "It has a very low density",
+      "It is radioactive",
+      "It freezes at room temperature"
+    ],
+    "correctIndex": 1,
+    "difficulty": "medium",
+    "category": "storage",
+    "explanation": "Hydrogen is the lightest gas, so it must be highly compressed or chilled to −253 °C to fit enough in a tank."
+  },
+  {
+    "text": "Unlike batteries, capacitors store energy mainly in…",
+    "options": [
+      "An electric field",
+      "Chemical bonds",
+      "A spinning mass",
+      "Hot molten salt"
+    ],
+    "correctIndex": 0,
+    "difficulty": "hard",
+    "category": "storage",
+    "explanation": "A capacitor stores energy in the electric field between charged plates, so it can charge and discharge very quickly."
+  },
+  {
+    "text": "Compressed air energy storage usually keeps the air in…",
+    "options": [
+      "Hot-air balloons",
+      "Car tyres",
+      "Underground caverns",
+      "Ocean waves"
+    ],
+    "correctIndex": 2,
+    "difficulty": "hard",
+    "category": "storage",
+    "explanation": "Spare electricity compresses air into sealed caverns. Later the air is released through turbines to generate power."
+  },
+  {
+    "text": "Molten salt heat storage is often paired with which kind of power plant?",
+    "options": [
+      "Offshore wind farms",
+      "Concentrated solar power",
+      "Tidal barrages",
+      "Run-of-river hydro"
+    ],
+    "correctIndex": 1,
+    "difficulty": "hard",
+    "category": "storage",
+    "explanation": "Molten salt holds heat from mirrors focusing sunlight, so the plant can keep making steam after sunset."
+  },
+  {
+    "text": "In battery chemistry, 'LFP' stands for…",
+    "options": [
+      "Lithium fluoride polymer",
+      "Lead ferrous plate",
+      "Liquid fuel power",
+      "Lithium iron phosphate"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "storage",
+    "explanation": "LFP (LiFePO₄) cells are used in many cars and home batteries for their safety and long life."
+  },
+  {
+    "text": "Pumped hydro storage typically returns about what share of the energy put in?",
+    "options": [
+      "About 10–20%",
+      "About 30–40%",
+      "Exactly 100%",
+      "About 70–85%"
+    ],
+    "correctIndex": 3,
+    "difficulty": "hard",
+    "category": "storage",
+    "explanation": "Some energy is lost in pumps, turbines and pipes, but pumped hydro still returns most of what is stored."
+  }
+]
