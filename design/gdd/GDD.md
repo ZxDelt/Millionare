@@ -410,3 +410,10 @@ None. Turso chosen (SQLite-compatible, so there's no dialect change between dev 
 - Speech bubbles are anchored to each character's head. Lock-in, walk-away and phone prompts appear inside the host's bubble; the contestant says the chosen answer and lifeline requests.
 - HUD: question panel centred on screen; chamfered plates with real borders; banked coins and ladder hide the result until the reveal.
 - Extra detail: truss lamps, LED pylons, TV cameras with tally lights, drifting light dust.
+
+### 16.3 Short show + CPCL facts (v1.2) — supersedes §5/§8 where they differ
+- One game = **5 questions**. Ladder: 50,000 → 2,50,000 → 10,00,000 → 50,00,000 → **1,00,00,000 (1 crore)** Image Coins. Tiers: easy, easy, medium, medium, hard.
+- **Every question is timed** (45 s). **No walking away** (default walk-away level 6 = off; admin can lower it).
+- Amounts show in Indian grouping (1,00,00,000); the host says them in words ("50 lakh", "1 crore").
+- A stored 16-step ladder from an older version is ignored automatically; the defaults above apply.
+- After each answer the reveal shows **"Did you know?"** plus a **CPCL fact** matched to the question's category (src/lib/cpcl-facts.ts, sourced from cpcl.co.in / iocl.com). Facts don't repeat within a game.

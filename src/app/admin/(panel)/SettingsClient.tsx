@@ -8,7 +8,7 @@ type NumKey = Exclude<keyof GameSettings, "ladder">;
 const FIELDS: { k: NumKey; label: string; hint: string }[] = [
   { k: "questionTimerSec", label: "Question timer (s)", hint: "Per question, on timed levels" },
   { k: "timedUntilLevel", label: "Timer up to level", hint: "Q1 to this level are timed" },
-  { k: "walkAwayFromLevel", label: "Walk away from level", hint: "Player may quit from this level" },
+  { k: "walkAwayFromLevel", label: "Walk away from level", hint: "Player may quit from this level (6 = off)" },
   { k: "phoneFriendSec", label: "Phone a Friend (s)", hint: "Call countdown" },
   { k: "reconfirmSec", label: "Reconfirm limit (s)", hint: "Auto-cancel if no answer" },
   { k: "maxCancelsPerQuestion", label: "Cancels per question", hint: "Then the next pick locks directly" },

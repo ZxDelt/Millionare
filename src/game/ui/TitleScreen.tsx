@@ -29,7 +29,7 @@ export default function TitleScreen() {
     <div className="title-overlay">
       <form className="title-card" onSubmit={go}>
         <img src="/brand/logo.svg" alt="JOULE JACKPOT — The Energy Quiz Show" className="title-logo" />
-        <p className="tagline">16 questions about energy · 3 lifelines · 100,000,000 Image Coins</p>
+        <p className="tagline">5 questions about energy · 3 lifelines · 1 crore Image Coins</p>
         <label htmlFor="pname" className="sr-only">Your name</label>
         <input
           id="pname"
@@ -48,7 +48,7 @@ export default function TitleScreen() {
             {muted ? "🔇 Sound off" : "🔊 Sound on"}
           </button>
           <span className="muted">{ready ? "Studio ready" : "Powering up the studio…"}</span>
-          <span className="muted">Keys: A–D pick · Y/N confirm · Q/P/I lifelines · W walk away</span>
+          <span className="muted">Keys: A–D pick · Y/N confirm · Q/P/I lifelines</span>
         </div>
       </form>
     </div>

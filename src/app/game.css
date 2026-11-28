@@ -44,8 +44,8 @@
 .ladder { position: absolute; top: var(--edge); right: var(--edge); width: var(--ladder-w); margin: 0; padding: 8px; list-style: none;
   background: rgba(7,10,34,.82); border: 1px solid var(--line); border-radius: 14px; font-variant-numeric: tabular-nums;
   box-shadow: 0 10px 30px rgba(0,0,0,.35); }
-.rung { display: grid; grid-template-columns: 26px 14px 1fr; align-items: center; height: 24px; padding: 0 10px; border-radius: 6px;
-  font-size: 14px; line-height: 1; color: var(--muted); }
+.rung { display: grid; grid-template-columns: 26px 14px 1fr; align-items: center; height: 38px; padding: 0 12px; border-radius: 8px;
+  font-size: 17px; font-weight: 600; line-height: 1; color: var(--muted); }
 .rung::before { content: ""; grid-column: 2; grid-row: 1; width: 6px; height: 6px; transform: rotate(45deg); background: currentColor; opacity: .5; }
 .rung-n { grid-column: 1; grid-row: 1; color: var(--gold); font-weight: 700; }
 .rung-c { grid-column: 3; grid-row: 1; text-align: right; }
@@ -118,7 +118,11 @@
 
 .explain { display: flex; gap: 14px; align-items: center; margin-bottom: 8px; padding: 10px 16px; line-height: 1.4;
   background: rgba(7,10,34,.92); border: 1px solid var(--green); border-radius: 12px; }
-.explain b { color: var(--green); white-space: nowrap; }
+.explain-body { display: grid; gap: 4px; }
+.explain-body p { margin: 0; }
+.explain b { color: var(--green); white-space: nowrap; margin-right: 4px; }
+.explain .cpcl b { color: var(--gold); }
+.over-cpcl { border-left: 3px solid var(--gold); }
 .btn-next { margin-left: auto; white-space: nowrap; flex: none; }
 
 /* speech bubbles, anchored to the characters' heads by JS (transform) */
@@ -176,7 +180,7 @@
   .lifeline { width: 78px; height: 66px; }
   .lifeline .ll-icon { font-size: 17px; }
   .lifeline .ll-label { font-size: 8px; }
-  .rung { height: 19px; font-size: 13px; }
+  .rung { height: 30px; font-size: 15px; }
   .q-banner { min-height: 58px; padding: 6px 26px; margin-bottom: 6px; }
   .q-text { font-size: 18px; }
   .plate { min-height: 42px; font-size: 16px; }
@@ -187,7 +191,7 @@
   .explain { padding: 8px 12px; font-size: 14px; }
 }
 @media (max-height: 640px) {
-  .rung { height: 17px; font-size: 12px; }
+  .rung { height: 26px; font-size: 14px; }
   .ladder { padding: 6px; }
 }
 @media (max-width: 1100px) {

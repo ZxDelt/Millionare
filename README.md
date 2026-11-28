@@ -12,7 +12,7 @@ npm test                      # game-rule unit tests
 ```
 
 - `/?debug=1` shows FPS, frame times, draw calls and the auto-quality level.
-- Keys in game: A–D pick · Y/N confirm · Q Double Chance · P Phone a Friend · I Ask the AI · W walk away · Enter next.
+- Keys in game: A–D pick · Y/N confirm · Q Double Chance · P Phone a Friend · I Ask the AI · Enter next.
 
 ## Admin
 - `/admin`: game rules (ladder, timers, cancels, Ask-the-AI odds), ElevenLabs key + voice picker, voice cache, pre-generate voice.

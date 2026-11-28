@@ -3,7 +3,7 @@ import { useFrame } from "@react-three/fiber";
 import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { Vector3, type Group, type Mesh, type MeshBasicMaterial } from "three";
 import { useGame, type GameView } from "../store";
-import { formatCoins } from "@/lib/speech";
+import { coinWords, formatCoins } from "@/lib/speech";
 import { fx } from "./fx";
 import { liveCanvas } from "./textures";
 import { CONSOLE_Z, HEAD_Y, HOST, MONITOR_X, MONITOR_Y, PLAYER } from "./layout";
@@ -117,13 +117,13 @@ function drawJumbo(g: CanvasRenderingContext2D, s: GameView) {
   }
   g.fillStyle = "#9aa3d6";
   g.font = "bold 12px sans-serif";
-  g.fillText(`QUESTION ${sv.level} OF 16`, W / 2, 28);
+  g.fillText(`QUESTION ${sv.level} OF ${sv.ladder.length}`, W / 2, 28);
   g.fillStyle = "#ffc83d";
   g.font = "bold 24px sans-serif";
-  g.fillText(`◆ ${formatCoins(sv.ladder[sv.level - 1].coins)}`, W / 2, 60);
+  g.fillText(`◆ ${coinWords(sv.ladder[sv.level - 1].coins).toUpperCase()}`, W / 2, 60);
   g.fillStyle = "#22e1ff";
   g.font = "bold 12px sans-serif";
-  g.fillText(sv.over ? "GAME OVER" : sv.level >= sv.walkAwayFromLevel ? "NO TIMER · WALK AWAY OPEN" : "45 SECOND CLOCK", W / 2, 92);
+  g.fillText(sv.over ? "GAME OVER" : sv.level === sv.ladder.length ? "FINAL QUESTION" : sv.level >= sv.walkAwayFromLevel ? "WALK AWAY OPEN" : `${Math.round(sv.timer.totalMs / 1000)} SECOND CLOCK`, W / 2, 92);
 }
 
 function Monitor({ x, target, map }: { x: number; target: Vector3; map: import("three").Texture }) {

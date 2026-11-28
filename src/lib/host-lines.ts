@@ -103,7 +103,7 @@ export const HOST_LINES: Record<HostState, string[]> = {
   ],
   win: [
     "YOU'VE DONE IT! {name} has won the JOULE JACKPOT! One hundred million Image Coins!",
-    "History tonight! {name} conquers all sixteen questions! JACKPOT!",
+    "History tonight! {name} answers all five questions! JACKPOT!",
   ],
   doubleChanceOn: [
     "Double Chance is active! If your first pick is wrong, you get one more try.",

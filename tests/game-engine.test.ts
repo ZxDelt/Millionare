@@ -28,7 +28,7 @@ test("select pauses timer and asks to reconfirm; confirm correct banks coins", (
   assert.equal(toPublic(s, T0 + 20000).timer.remainingMs, 40000); // paused at 40 s
   apply(s, { type: "confirm" }, T0 + 6000);
   assert.equal(s.phase, "revealed");
-  assert.equal(s.bankedCoins, 10_000);
+  assert.equal(s.bankedCoins, 50_000);
 });
 
 test("wrong answer = game over with 0 coins", () => {
@@ -107,30 +107,40 @@ test("lifeline can only be used once", () => {
   assert.throws(() => apply(s, { type: "lifeline", id: "phone" }, T0 + 60_000), GameError);
 });
 
-test("walk away only from Q9 and keeps banked coins; untimed from Q9", () => {
+test("walking away is off by default; every question is timed", () => {
   const s = start();
-  assert.throws(() => apply(s, { type: "walkAway" }, T0), GameError);
   let t = T0;
-  for (let lvl = 1; lvl <= 8; lvl++) {
+  for (let lvl = 1; lvl <= 5; lvl++) {
+    assert.equal(s.level, lvl);
+    assert.equal(s.timed, true);
+    assert.throws(() => apply(s, { type: "walkAway" }, t), GameError);
     apply(s, { type: "select", index: s.q.correctIndex }, t);
     if (s.phase === "reconfirm") apply(s, { type: "confirm" }, t);
-    apply(s, { type: "next" }, t, { nextQ: Q(lvl + 1, 1) }); apply(s, { type: "begin" }, t);
+    if (lvl < 5) { apply(s, { type: "next" }, t, { nextQ: Q(lvl + 1, 1) }); apply(s, { type: "begin" }, t); }
     t += 1000;
   }
-  assert.equal(s.level, 9);
-  assert.equal(s.timed, false);
-  apply(s, { type: "walkAway" }, t);
-  assert.deepEqual(s.over, { reason: "walk", coins: 250_000 });
+  assert.equal(s.over?.reason, "win");
 });
 
-test("answering all 16 wins the jackpot", () => {
+test("the last question is timed too", () => {
   const s = start();
-  for (let lvl = 1; lvl <= 16; lvl++) {
+  for (let lvl = 1; lvl < 5; lvl++) {
+    apply(s, { type: "select", index: s.q.correctIndex }, T0);
+    if (s.phase === "reconfirm") apply(s, { type: "confirm" }, T0);
+    apply(s, { type: "next" }, T0, { nextQ: Q(lvl + 1, 1) }); apply(s, { type: "begin" }, T0);
+  }
+  assert.equal(s.level, 5);
+  assert.equal(s.timed, true);
+});
+
+test("answering all 5 wins the jackpot of 1 crore", () => {
+  const s = start();
+  for (let lvl = 1; lvl <= 5; lvl++) {
     apply(s, { type: "select", index: s.q.correctIndex }, T0);
     apply(s, { type: "confirm" }, T0);
-    if (lvl < 16) apply(s, { type: "next" }, T0, { nextQ: Q(lvl + 1, lvl % 4) }); apply(s, { type: "begin" }, T0);
+    if (lvl < 5) apply(s, { type: "next" }, T0, { nextQ: Q(lvl + 1, lvl % 4) }); apply(s, { type: "begin" }, T0);
   }
-  assert.deepEqual(s.over, { reason: "win", coins: 100_000_000 });
+  assert.deepEqual(s.over, { reason: "win", coins: 10_000_000 });
 });
 
 test("timer does not run until begin; server auto-starts it after READ_MS", async () => {

@@ -5,6 +5,7 @@ import { getSettings } from "./settings";
 import { apply, GameError, newSession, tick, toPublic, type QuestionSnap, type SessionState } from "./game-engine";
 import type { GameAction, PublicState } from "./game-types";
 import type { Difficulty } from "./constants";
+import { pickCpclFact } from "./cpcl-facts";
 
 /** Tier fallback order (GDD §6): tagged tier → untagged → nearest other tiers. */
 const FALLBACK: Record<Difficulty, Difficulty[]> = {
@@ -13,7 +14,7 @@ const FALLBACK: Record<Difficulty, Difficulty[]> = {
   hard: ["medium", "easy"],
 };
 
-async function pickQuestion(tier: Difficulty, exclude: number[]): Promise<QuestionSnap> {
+async function pickQuestion(tier: Difficulty, exclude: number[], factsUsed: string[]): Promise<QuestionSnap> {
   const db = await getDb();
   const ex = exclude.length ? `AND id NOT IN (${exclude.map(() => "?").join(",")})` : "";
   const order = "ORDER BY times_used ASC, RANDOM() LIMIT 1"; // least-used first, random among equals
@@ -24,7 +25,7 @@ async function pickQuestion(tier: Difficulty, exclude: number[]): Promise<Questi
   ];
   for (const t of tries) {
     const r = await db.execute({
-      sql: `SELECT id, text, options, correct_index, explanation FROM questions
+      sql: `SELECT id, text, options, correct_index, explanation, category FROM questions
             WHERE status = 'active' AND ${t.where} ${ex} ${order}`,
       args: [...t.args, ...exclude],
     });
@@ -40,6 +41,7 @@ async function pickQuestion(tier: Difficulty, exclude: number[]): Promise<Questi
         options: JSON.parse(String(row.options)),
         correctIndex: Number(row.correct_index),
         explanation: String(row.explanation ?? ""),
+        cpclFact: pickCpclFact(row.category == null ? null : String(row.category), factsUsed),
       };
     }
   }
@@ -83,8 +85,9 @@ export async function startGame(rawName: string): Promise<PublicState> {
   await db.execute("DELETE FROM tts_usage WHERE session_id NOT IN (SELECT id FROM sessions)");
 
   const now = Date.now();
-  const q = await pickQuestion(settings.ladder[0].tier, []);
+  const q = await pickQuestion(settings.ladder[0].tier, [], []);
   const s = newSession(randomBytes(16).toString("hex"), name, settings, q, now);
+  s.factsUsed = q.cpclFact ? [q.cpclFact] : [];
   await store(s, null);
   return toPublic(s, now);
 }
@@ -108,9 +111,10 @@ export async function act(id: string, action: GameAction): Promise<PublicState> 
   const now = Date.now();
   let nextQ: QuestionSnap | undefined;
   if (action.type === "next" && s.phase === "revealed") {
-    nextQ = await pickQuestion(s.settings.ladder[s.level].tier, s.usedIds);
+    nextQ = await pickQuestion(s.settings.ladder[s.level].tier, s.usedIds, s.factsUsed ?? []);
   }
   apply(s, action, now, { nextQ });
+  if (nextQ?.cpclFact) s.factsUsed = [...(s.factsUsed ?? []), nextQ.cpclFact];
   await store(s, prev);
   return toPublic(s, now);
 }

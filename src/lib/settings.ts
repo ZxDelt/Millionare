@@ -1,7 +1,7 @@
 import "server-only";
 import { getDb } from "./db";
 import { DEFAULT_SETTINGS, type GameSettings } from "./defaults";
-import { DIFFICULTIES } from "./constants";
+import { DIFFICULTIES, LADDER_LEN } from "./constants";
 
 export type { GameSettings, LadderStep } from "./defaults";
 export { DEFAULT_SETTINGS };
@@ -12,7 +12,14 @@ export async function getSettings(): Promise<GameSettings> {
   const db = await getDb();
   const r = await db.execute({ sql: "SELECT value FROM settings WHERE key = ?", args: [KEY] });
   if (!r.rows.length) return DEFAULT_SETTINGS;
-  return { ...DEFAULT_SETTINGS, ...(JSON.parse(String(r.rows[0].value)) as Partial<GameSettings>) };
+  const saved = JSON.parse(String(r.rows[0].value)) as Partial<GameSettings>;
+  // Saved from an older ladder size (e.g. the 16-question show): its ladder and level rules no longer fit.
+  if (saved.ladder?.length !== LADDER_LEN) {
+    delete saved.ladder;
+    delete saved.timedUntilLevel;
+    delete saved.walkAwayFromLevel;
+  }
+  return { ...DEFAULT_SETTINGS, ...saved };
 }
 
 export async function saveSettings(s: GameSettings): Promise<void> {
@@ -42,7 +49,7 @@ export function validateSettings(raw: unknown): { ok: true; value: GameSettings 
   const o = (raw ?? {}) as Record<string, unknown>;
   const errors: string[] = [];
   const ladder = Array.isArray(o.ladder) ? o.ladder : [];
-  if (ladder.length !== 16) errors.push("Ladder must have exactly 16 steps.");
+  if (ladder.length !== LADDER_LEN) errors.push(`Ladder must have exactly ${LADDER_LEN} steps.`);
   const steps = ladder.map((s, i) => {
     const st = (s ?? {}) as Record<string, unknown>;
     const coins = int(st.coins, 1, 1_000_000_000_000);
@@ -61,8 +68,8 @@ export function validateSettings(raw: unknown): { ok: true; value: GameSettings 
   const value: GameSettings = {
     ladder: steps,
     questionTimerSec: field("questionTimerSec", 10, 300, "Question timer"),
-    timedUntilLevel: field("timedUntilLevel", 0, 16, "Timed until level"),
-    walkAwayFromLevel: field("walkAwayFromLevel", 2, 16, "Walk away from level"),
+    timedUntilLevel: field("timedUntilLevel", 0, LADDER_LEN, "Timed until level"),
+    walkAwayFromLevel: field("walkAwayFromLevel", 2, LADDER_LEN + 1, "Walk away from level"),
     phoneFriendSec: field("phoneFriendSec", 10, 300, "Phone a Friend"),
     reconfirmSec: field("reconfirmSec", 3, 60, "Reconfirm limit"),
     maxCancelsPerQuestion: field("maxCancelsPerQuestion", 0, 5, "Max cancels"),

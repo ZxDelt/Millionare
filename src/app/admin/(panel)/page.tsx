@@ -1,6 +1,6 @@
 import { getCoverage } from "@/lib/questions";
 import { getSettings, DEFAULT_SETTINGS } from "@/lib/settings";
-import { SESSION_TIER_NEEDS } from "@/lib/constants";
+import { LADDER_LEN, SESSION_TIER_NEEDS } from "@/lib/constants";
 import { cacheStats, voiceStatus } from "@/lib/voice";
 import SettingsClient from "./SettingsClient";
 import VoicePanel from "./VoicePanel";
@@ -10,7 +10,7 @@ export const metadata = { title: "Admin — JOULE JACKPOT" };
 export default async function AdminHome() {
   const [cov, settings, voice, cache] = await Promise.all([getCoverage(), getSettings(), voiceStatus(), cacheStats()]);
   const low = (tier: keyof typeof SESSION_TIER_NEEDS) => cov[tier] < SESSION_TIER_NEEDS[tier];
-  const tooSmall = cov.active < 16;
+  const tooSmall = cov.active < LADDER_LEN;
 
   return (
     <>
@@ -23,7 +23,7 @@ export default async function AdminHome() {
         <Stat k="Untagged" v={cov.untagged} />
         <Stat k="Active / total" v={`${cov.active} / ${cov.total}`} warn={tooSmall} />
       </div>
-      {tooSmall && <div className="notice err">Fewer than 16 active questions. The game will refuse to start.</div>}
+      {tooSmall && <div className="notice err">Fewer than {LADDER_LEN} active questions. The game will refuse to start.</div>}
 
       <SettingsClient initial={settings} defaults={DEFAULT_SETTINGS} />
       <VoicePanel initialStatus={voice} initialCache={cache} />

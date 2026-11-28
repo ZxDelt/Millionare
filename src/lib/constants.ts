@@ -16,5 +16,8 @@ export type CategoryId = (typeof CATEGORIES)[number]["id"];
 export const QUESTION_STATUSES = ["active", "draft"] as const;
 export type QuestionStatus = (typeof QUESTION_STATUSES)[number];
 
+/** Questions in one game (GDD §5). */
+export const LADDER_LEN = 5;
+
 /** Questions one session needs per tier (GDD §6). */
-export const SESSION_TIER_NEEDS: Record<Difficulty, number> = { easy: 5, medium: 5, hard: 6 };
+export const SESSION_TIER_NEEDS: Record<Difficulty, number> = { easy: 2, medium: 2, hard: 1 };

@@ -1,4 +1,5 @@
 import type { Difficulty } from "./constants";
+export { LADDER_LEN } from "./constants";
 
 export interface LadderStep {
   coins: number;
@@ -16,18 +17,16 @@ export interface GameSettings {
   askAiCorrectPct: number;
 }
 
-const tier = (n: number): Difficulty => (n <= 5 ? "easy" : n <= 10 ? "medium" : "hard");
-const COINS = [
-  10_000, 20_000, 30_000, 50_000, 75_000, 100_000, 150_000, 250_000, 500_000, 1_000_000, 2_500_000, 5_000_000,
-  10_000_000, 25_000_000, 50_000_000, 100_000_000,
-];
+// 50 thousand → 2.5 lakh → 10 lakh → 50 lakh → 1 crore
+const COINS = [50_000, 250_000, 1_000_000, 5_000_000, 10_000_000];
+const TIERS: Difficulty[] = ["easy", "easy", "medium", "medium", "hard"];
 
 /** GDD §5, §8, §11. */
 export const DEFAULT_SETTINGS: GameSettings = {
-  ladder: COINS.map((coins, i) => ({ coins, tier: tier(i + 1) })),
+  ladder: COINS.map((coins, i) => ({ coins, tier: TIERS[i] })),
   questionTimerSec: 45,
-  timedUntilLevel: 8,
-  walkAwayFromLevel: 9,
+  timedUntilLevel: 5, // every question is timed
+  walkAwayFromLevel: 6, // > ladder length = walking away is off
   phoneFriendSec: 60,
   reconfirmSec: 10,
   maxCancelsPerQuestion: 1,

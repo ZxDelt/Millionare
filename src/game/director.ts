@@ -5,7 +5,7 @@
  */
 import type { GameAction, LifelineId, PublicState } from "@/lib/game-types";
 import { pickLine, type HostState } from "@/lib/host-lines";
-import { explanationSpeech, formatCoins, questionSpeech } from "@/lib/speech";
+import { coinWords, explanationSpeech, questionSpeech } from "@/lib/speech";
 import { audio, type Cue } from "./audio";
 import { frame, initialView, setView, timerRemaining, useGame, type Crowd, type Mood, type Plate } from "./store";
 
@@ -79,7 +79,7 @@ function vars(extra: Record<string, string | number> = {}): Record<string, strin
   return {
     name: s?.name ?? "",
     level: s?.level ?? 1,
-    coins: s ? formatCoins(s.ladder[Math.min(s.level, s.ladder.length) - 1].coins) : 0,
+    coins: s ? coinWords(s.ladder[Math.min(s.level, s.ladder.length) - 1].coins) : 0,
     ...extra,
   };
 }
@@ -205,7 +205,7 @@ async function presentQuestion(first: boolean) {
   audio.loop("crowd", null);
 
   if (s.level === s.walkAwayFromLevel) await line("walkAwayUnlocked");
-  await line(first ? "firstQuestion" : s.level >= 11 ? "bigQuestion" : "askQuestion");
+  await line(first ? "firstQuestion" : s.level >= s.ladder.length - 1 ? "bigQuestion" : "askQuestion");
 
   setView({ questionVisible: true, hostReading: true });
   const reveal = (async () => {
@@ -223,8 +223,8 @@ async function presentQuestion(first: boolean) {
   startWatch();
 }
 
-function suspenseMs(level: number) {
-  return 2000 + (level - 1) * 400; // Q1 2 s → Q16 8 s (GDD §7)
+function suspenseMs(level: number, total: number) {
+  return 2000 + (6000 * (level - 1)) / Math.max(1, total - 1); // first question 2 s → last 8 s (GDD §7)
 }
 
 async function afterJudged(res: PublicState, index: number) {
@@ -238,7 +238,7 @@ async function afterJudged(res: PublicState, index: number) {
   await line("suspense", { letter: LETTERS[index] });
   mood("suspense");
   audio.loop("bed", "suspense", 0.2);
-  await sleep(suspenseMs(res.level));
+  await sleep(suspenseMs(res.level, res.ladder.length));
   audio.loop("bed", null, 0.15);
 
   if (res.phase === "dcMiss") {
@@ -262,9 +262,9 @@ async function afterJudged(res: PublicState, index: number) {
     sfx("correct");
     crowd("cheer");
     sfx("cheer");
-    const big = res.level >= 11;
+    const big = res.level >= res.ladder.length - 1;
     if (big) setView({ confettiAt: performance.now() });
-    await line(big ? "correctBig" : "correct", { coins: formatCoins(res.bankedCoins) });
+    await line(big ? "correctBig" : "correct", { coins: coinWords(res.bankedCoins) });
     setView({ explanation: res.reveal?.explanation ?? null, canNext: true });
     if (res.reveal?.explanation && get().voice) void say(explanationSpeech(res.reveal.explanation), { bubble: false });
     crowd("idle");
@@ -293,7 +293,7 @@ async function finish(res: PublicState, picked: number | null) {
     sfx("walk");
     crowd("clap");
     sfx("applause");
-    await line("walkAway", { coins: formatCoins(over.coins) });
+    await line("walkAway", { coins: coinWords(over.coins) });
   } else {
     if (picked !== null) plate(picked, "wrong");
     plate(r.correctIndex, "correct");

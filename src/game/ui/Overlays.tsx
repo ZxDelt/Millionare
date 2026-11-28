@@ -196,7 +196,7 @@ export function OverScreen() {
   const { reason, coins } = s.over;
   const title = { win: "JACKPOT!", walk: "Well played!", wrong: "Game over", timeout: "Time's up!" }[reason];
   const sub = {
-    win: `${s.name} answered all 16 questions!`,
+    win: `${s.name} answered all ${s.ladder.length} questions!`,
     walk: `${s.name} walked away at question ${s.level}.`,
     wrong: `${s.name} reached question ${s.level}.`,
     timeout: `${s.name} ran out of time on question ${s.level}.`,
@@ -212,6 +212,9 @@ export function OverScreen() {
           <div className="over-explain">
             <b>Answer: {LETTERS[s.reveal.correctIndex]} — {s.question?.options[s.reveal.correctIndex]}.</b> {s.reveal.explanation}
           </div>
+        )}
+        {s.reveal?.cpclFact && (
+          <div className="over-explain over-cpcl"><b>CPCL fact:</b> {s.reveal.cpclFact}</div>
         )}
         <button className="btn btn-primary btn-big" onClick={playAgain} autoFocus>Play again</button>
       </div>

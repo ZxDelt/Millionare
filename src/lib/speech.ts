@@ -7,4 +7,14 @@ export function explanationSpeech(explanation: string): string {
   return explanation.trim();
 }
 
-export const formatCoins = (n: number) => n.toLocaleString("en-US");
+/** Indian digit grouping: 1,00,00,000. */
+export const formatCoins = (n: number) => n.toLocaleString("en-IN");
+
+/** Spoken/written-out amount for host lines: "50 thousand", "2.5 lakh", "1 crore". */
+export function coinWords(n: number): string {
+  const fmt = (v: number) => String(Math.round(v * 100) / 100);
+  if (n >= 1e7) return `${fmt(n / 1e7)} crore`;
+  if (n >= 1e5) return `${fmt(n / 1e5)} lakh`;
+  if (n >= 1e3) return `${fmt(n / 1e3)} thousand`;
+  return String(n);
+}

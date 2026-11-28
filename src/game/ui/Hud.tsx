@@ -81,7 +81,7 @@ function Ladder() {
           st.level === s.level && s.phase !== "over" ? "current" : "",
           st.level < s.level || (st.level === s.level && ((s.phase === "revealed" && !hidden) || s.over?.reason === "win")) ? "won" : "",
           st.level === s.walkAwayFromLevel ? "walk-mark" : "",
-          st.level === 16 ? "jackpot" : "",
+          st.level === s.ladder.length ? "jackpot" : "",
         ].join(" ");
         return (
           <li key={st.level} className={cls}>
@@ -129,7 +129,10 @@ function BottomPanel() {
 
       {explanation && (
         <div className="explain" role="status">
-          <b>Did you know?</b> {explanation}
+          <div className="explain-body">
+            <p><b>Did you know?</b> {explanation}</p>
+            {s.reveal?.cpclFact && <p className="cpcl"><b>CPCL fact</b> {s.reveal.cpclFact}</p>}
+          </div>
           {canNext && (
             <button className="btn btn-primary btn-next" onClick={next} autoFocus>
               Next question ▶

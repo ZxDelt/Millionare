@@ -11,6 +11,7 @@ export interface QuestionSnap {
   options: string[];
   correctIndex: number;
   explanation: string;
+  cpclFact?: string;
 }
 
 export interface SessionState {
@@ -22,6 +23,7 @@ export interface SessionState {
   level: number;
   bankedCoins: number;
   usedIds: number[];
+  factsUsed?: string[];
   q: QuestionSnap;
   // timer
   timed: boolean;
@@ -324,7 +326,7 @@ export function toPublic(s: SessionState, now: number): PublicState {
     cancelsLeft: Math.max(0, s.settings.maxCancelsPerQuestion - s.cancels),
     lifelineActive: !la ? null : la.id === "phone" ? { id: "phone", remainingMs: Math.max(0, la.deadline - now) } : { id: "askAi", suggestion: la.suggestion },
     lastPick: s.lastPick,
-    reveal: revealVisible && s.reveal ? { ...s.reveal, explanation: s.q.explanation } : null,
+    reveal: revealVisible && s.reveal ? { ...s.reveal, explanation: s.q.explanation, cpclFact: s.q.cpclFact ?? "" } : null,
     over: s.over,
     begun: s.begun,
     canWalkAway: s.phase === "question" && s.begun && s.level >= s.settings.walkAwayFromLevel,
