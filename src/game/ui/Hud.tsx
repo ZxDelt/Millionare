@@ -4,6 +4,7 @@ import { timerRemaining, useGame, type GameView } from "../store";
 import { askWalkAway, next, select, takeLifeline, toggleMute } from "../director";
 import { formatCoins } from "@/lib/speech";
 import type { LifelineId } from "@/lib/game-types";
+import { ActionBar } from "./Overlays";
 
 const LETTERS = ["A", "B", "C", "D"];
 
@@ -140,6 +141,8 @@ function BottomPanel() {
           )}
         </div>
       )}
+
+      <ActionBar />
 
       <div className="q-banner" aria-live="polite">
         <span className="q-level">Q{s.level}</span>

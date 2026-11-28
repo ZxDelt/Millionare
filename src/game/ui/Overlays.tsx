@@ -109,8 +109,8 @@ function useHeadAnchor(who: "host" | "player", on: boolean) {
 }
 
 /**
- * The host's speech bubble, next to the host's head. Prompts the host asks (lock in? walk away?
- * phone timer) appear inside it, so every dialog comes from the host.
+ * The host's speech bubble, next to the host's head. The answer buttons for what the host asks
+ * (lock in? phone timer) sit in <ActionBar> just above the question, where the mouse already is.
  */
 export function HostBubble() {
   const host = useGame((s) => s.host);
@@ -118,14 +118,11 @@ export function HostBubble() {
   const walk = useGame((s) => s.walkConfirm);
   const phone = useGame((s) => s.phone);
   const s = useGame((g) => g.server);
-  const busy = useGame((g) => g.busy);
   const walkText = s ? `Walk away with ◆ ${formatCoins(s.bankedCoins)} Image Coins? Play on and miss, and you leave with nothing.` : "";
   const text = walk ? walkText : host.text;
   const visible = host.visible || !!r || walk || !!phone;
   const shown = useTyped(text, walk ? -1 : host.key, visible);
   const ref = useHeadAnchor("host", visible);
-  const cd = useCountdown(r?.endsAt ?? null, () => cancel(true));
-  const ph = useCountdown(phone?.endsAt ?? null, endPhone);
   if (!visible) return null;
   const mode = r ? "reconfirm" : walk ? "walk" : phone ? "phone" : "talk";
   return (
@@ -135,41 +132,64 @@ export function HostBubble() {
         {shown}
         <span className="speech-ghost" aria-hidden>{text.slice(shown.length)}</span>
       </p>
-      {r && s?.question && (
-        <>
-          <div className="speech-pick"><b>{LETTERS[r.index]}</b><span>{s.question.options[r.index]}</span></div>
-          <div className="speech-meta">
-            <span>{s.cancelsLeft > 0 ? `${s.cancelsLeft} change left` : "Last chance to change"} · timer paused</span>
-            <span className="speech-cd" ref={cd.numRef} />
-          </div>
-          <div className="cd-bar"><div ref={cd.barRef} /></div>
-          <div className="speech-btns">
-            <button className="btn btn-primary" onClick={confirm} disabled={busy} autoFocus>Lock it <kbd>Y</kbd></button>
-            <button className="btn" onClick={() => cancel()} disabled={busy}>No <kbd>N</kbd></button>
-          </div>
-        </>
-      )}
-      {walk && (
-        <div className="speech-btns">
+    </div>
+  );
+}
+
+/**
+ * Prompt row directly above the question banner: lock-in Yes/No with its countdown, the Phone a Friend
+ * timer, or the walk-away choice. The host's bubble carries the spoken question; this carries the buttons.
+ */
+export function ActionBar() {
+  const r = useGame((s) => s.reconfirm);
+  const walk = useGame((s) => s.walkConfirm);
+  const phone = useGame((s) => s.phone);
+  const s = useGame((g) => g.server);
+  const busy = useGame((g) => g.busy);
+  const cd = useCountdown(r?.endsAt ?? null, () => cancel(true));
+  const ph = useCountdown(phone?.endsAt ?? null, endPhone);
+  if (r && s?.question) {
+    return (
+      <div className="action-bar ab-lock" role="dialog" aria-label="Lock in your answer?">
+        <div className="ab-pick"><b>{LETTERS[r.index]}</b><span>{s.question.options[r.index]}</span></div>
+        <div className="ab-info">
+          <b>Lock it in?</b>
+          <span>{s.cancelsLeft > 0 ? `${s.cancelsLeft} change left` : "Last chance to change"} · timer paused</span>
+        </div>
+        <span className="ab-cd" ref={cd.numRef} />
+        <div className="ab-btns">
+          <button className="btn btn-primary" onClick={confirm} disabled={busy} autoFocus>Lock it <kbd>Y</kbd></button>
+          <button className="btn" onClick={() => cancel()} disabled={busy}>No <kbd>N</kbd></button>
+        </div>
+        <div className="ab-bar"><div ref={cd.barRef} /></div>
+      </div>
+    );
+  }
+  if (phone) {
+    return (
+      <div className="action-bar ab-phone" role="dialog" aria-label="Phone a friend">
+        <span className="phone-icon" aria-hidden>☎</span>
+        <span className="ab-phone-n"><span ref={ph.numRef} />s</span>
+        <div className="ab-info"><b>Phone a Friend</b><span>Call your friend on your own phone · timer paused</span></div>
+        <div className="ab-btns">
+          <button className="btn btn-primary" onClick={endPhone}>Done <kbd>Enter</kbd></button>
+        </div>
+        <div className="ab-bar"><div ref={ph.barRef} /></div>
+      </div>
+    );
+  }
+  if (walk && s) {
+    return (
+      <div className="action-bar ab-lock" role="dialog" aria-label="Walk away">
+        <div className="ab-info"><b>Walk away with ◆ {formatCoins(s.bankedCoins)}?</b><span>Play on and miss, and you leave with nothing.</span></div>
+        <div className="ab-btns">
           <button className="btn btn-primary" onClick={() => walkAway(true)} autoFocus>Walk away <kbd>Y</kbd></button>
           <button className="btn" onClick={() => walkAway(false)}>Keep playing <kbd>N</kbd></button>
         </div>
-      )}
-      {phone && (
-        <>
-          <div className="speech-phonebox">
-            <span className="phone-icon" aria-hidden>☎</span>
-            <span className="phone-n"><span ref={ph.numRef} />s</span>
-          </div>
-          <div className="speech-meta"><span>Call your friend on your own phone · timer paused</span></div>
-          <div className="cd-bar cd-cyan"><div ref={ph.barRef} /></div>
-          <div className="speech-btns">
-            <button className="btn btn-primary" onClick={endPhone}>Done, back to the game <kbd>Enter</kbd></button>
-          </div>
-        </>
-      )}
-    </div>
-  );
+      </div>
+    );
+  }
+  return null;
 }
 
 /** The contestant's speech bubble (says the answer, asks for a lifeline). */
